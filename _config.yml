@@ -1,5 +1,5 @@
 
-name: Blank Slate
+name: Blank Slate # The name of your website
 
 footer-text: Copyright 2015 Stijn van Cuijk
 
@@ -7,13 +7,13 @@ description: A lightweight, mobile first Jekyll theme. # Discription of your sit
 
 subtitle: false # Set to false if you dan't want a subtitle on your site.
 
-url:  # The URL of the homepage of your site (without trailing slash).
+url: http://steinvc.github.io/blank-slate # The URL of the homepage of your site (without trailing slash).
 
 paginate: 3 # Number of posts on each post-page.
 
+
+
 paginate_path: "/page-:num/"
-
-
 permalink: pretty
 defaults:
 
