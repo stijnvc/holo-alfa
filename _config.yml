@@ -1,0 +1,26 @@
+
+name: Blank Slate
+
+footer-text: Copyright 2015 Stijn van Cuijk
+
+description: A lightweight, mobile first Jekyll theme. # Discription of your site, this will show up in google and in the header of every page (if subtitle is set to true).
+
+subtitle: false # Set to false if you dan't want a subtitle on your site.
+
+url:  # The URL of the homepage of your site (without trailing slash).
+
+paginate: 3 # Number of posts on each post-page.
+
+paginate_path: "/page-:num/"
+
+
+permalink: pretty
+defaults:
+
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+      excerpt_separator: "<!--more-->"

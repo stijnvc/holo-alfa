@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="nl" prefix="og: http://ogp.me/ns#">
+<head>
+	{% include head.html %}
+</head>
+<body>
+	<div class="wrap">
+		{% include header.html %}
+		{{ content }}
+	  <script>
+	    $('article').readingTime();
+	    $("article").fitVids();
+	    $('article p').each(function(i){
+	    if ( ($(this).find('img').length) &&
+	       (!$.trim($(this).text()).length))
+	    {
+	      $(this).addClass('img-only');
+	    }
+	  });
+	  </script>
+	</div>
+	{% include footer.html %}
+</body>
+</html>
