@@ -190,9 +190,9 @@ article:last-of-type::after {
   margin-top: 80px;
   margin-bottom: 0;
 }
-.read-more {
+a.read-more {
   display: inline-block;
-  background-position: 0 70%;
+  background-image: none;
 }
 .pagination {
   margin-top: -30px;
@@ -209,7 +209,7 @@ article:last-of-type::after {
 .pagination .previous {
   float: left;
 }
-.pagination .next {
+.pagination .next { 
   float: right;
 }
 footer {

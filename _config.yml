@@ -10,8 +10,9 @@ lang: nl # language attribute in <html> element
 
 date_format: "%b %-d, %Y" # http://alanwsmith.com/jekyll-liquid-date-formatting-examples
 
-# Customizable text. Usefull for translating in other languages.
+# Customizable text. Usefull for translating into other languages.
 footer-text: This is the footer
+var_read: Read # text after each post summary on the homepage
 var_newer: Newer
 var_older: Older
 var_less_than_a_minute_read: Less than a minute read

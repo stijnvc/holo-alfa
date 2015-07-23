@@ -8,9 +8,9 @@ home: true
     <span class="date">{{ post.date | date: site.date_format }}</span>
   	<a href="{{ post.url | prepend: site.url }}"><h1>{{ post.title }}</h1></a>
       {% if post.summary %}
-        <p>{{ post.summary }} <a class="read-more" href="{{ post.url | prepend: site.url }}">Read  →</a></p>
+        <p>{{ post.summary }}&nbsp<a class="read-more" href="{{ post.url | prepend: site.url }}">{{ site.var_read }}  →</a></p>
       {% else %}
-        <p>{{ post.excerpt | remove: '<p>' | remove: '</p>' }} <a class="read-more" href="{{ post.url | prepend: site.url }}">Read  →</a></p>
+        <p>{{ post.excerpt | remove: '<p>' | remove: '</p>' }}&nbsp<a class="read-more" href="{{ post.url | prepend: site.url }}">{{ site.var_read }}  →</a></p>
       {% endif %}
   </article>
 {% endfor %}
