@@ -6,4 +6,13 @@ layout: default
   <span class="date">{{ page.date | date: site.date_format }} • <span class="eta"></span></span>
 	<a href="#"><h1>{{ page.title }}</h1></a>
 		{{ content }}
+  {% if site.display-author %}
+    {% if post.author %}
+      <small><em>{{ site.var_guest_post_by }}: {{ post.author }} {{ post.author-info }}</em></small>
+    {% else %}
+      {% if site.author %}
+        <small><em>{{ site.var_post_by }}: {{ site.author }} {{ site.author-info }}</em></small>
+      {% endif %}
+    {% endif %}
+  {% endif %}
 </article>
