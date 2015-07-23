@@ -1,9 +1,14 @@
 
 name: Blank Slate # The name of your website
-url: http://steinvc.github.io/blank-slate # The URL of the homepage of your site (without trailing slash).
 description: A lightweight, mobile first Jekyll theme. # Discription of your site, this will show up in google and in the header of every page (if subtitle is set to true).
+author: Stijn van Cuijk # Author to show with posts and in the rss feed
+author-info: (@<a href="#">twitter-handle</a>) # Optional text (html) to dislay after author name. Leave empty if you don't want it.
+url: # http://steinvc.github.io/blank-slate # The URL of the homepage of your site (without trailing slash).
 
+display-author: true # Display author on posts
+theme-color: 0, 240, 255 # Color used throughout the theme. Format: R, G, B
 subtitle: false # Set to false if you dan't want a subtitle on your site.
+display-author: true # Display the author of a post
 paginate: 3 # Number of posts on each post-page.
 
 lang: nl # language attribute in <html> element
@@ -17,11 +22,15 @@ var_newer: Newer
 var_older: Older
 var_less_than_a_minute_read: Less than a minute read
 var_min_read: min read # text after reading time
+var_post_by: Post by
+var_guest_post_by: Guest post by
 
+highlighter: pygments
+kramdown:
+  input: GFM
 paginate_path: "/page-:num/"
 permalink: pretty
 defaults:
-
   -
     scope:
       path: ""
