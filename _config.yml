@@ -3,7 +3,7 @@ name: Blank Slate # The name of your website
 description: A lightweight, mobile first Jekyll theme. # Discription of your site, this will show up in google and in the header of every page (if subtitle is set to true).
 author: Stijn van Cuijk # Author to show with posts and in the rss feed
 author-info: (@<a href="#">twitter-handle</a>) # Optional text (html) to dislay after author name. Leave empty if you don't want it.
-url: # http://steinvc.github.io/blank-slate # The URL of the homepage of your site (without trailing slash).
+url: http://steinvc.github.io/blank-slate # http://steinvc.github.io/blank-slate # The URL of the homepage of your site (without trailing slash).
 
 display-author: true # Display author on posts
 theme-color: 0, 240, 255 # Color used throughout the theme. Format: R, G, B
