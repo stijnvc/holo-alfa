@@ -5,7 +5,7 @@ home: true
 
 {% for post in paginator.posts %}
   <article>
-    <span class="date">{{ post.date | date: "%b %-d, %Y" }}</span>
+    <span class="date">{{ post.date | date: site.date_format }}</span>
   	<a href="{{ post.url | prepend: site.url }}"><h1>{{ post.title }}</h1></a>
       {% if post.summary %}
         <p>{{ post.summary }} <a class="read-more" href="{{ post.url | prepend: site.url }}">Read  →</a></p>

@@ -1,17 +1,21 @@
 
 name: Blank Slate # The name of your website
-
-footer-text: Copyright 2015 Stijn van Cuijk
-
+url: http://steinvc.github.io/blank-slate # The URL of the homepage of your site (without trailing slash).
 description: A lightweight, mobile first Jekyll theme. # Discription of your site, this will show up in google and in the header of every page (if subtitle is set to true).
 
 subtitle: false # Set to false if you dan't want a subtitle on your site.
-
-url: http://steinvc.github.io/blank-slate # The URL of the homepage of your site (without trailing slash).
-
 paginate: 3 # Number of posts on each post-page.
 
+lang: nl # language attribute in <html> element
 
+date_format: "%b %-d, %Y" # http://alanwsmith.com/jekyll-liquid-date-formatting-examples
+
+# Customizable text. Usefull for translating in other languages.
+footer-text: This is the footer
+var_newer: Newer
+var_older: Older
+var_less_than_a_minute_read: Less than a minute read
+var_min_read: min read # text after reading time
 
 paginate_path: "/page-:num/"
 permalink: pretty

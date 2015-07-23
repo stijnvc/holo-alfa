@@ -107,9 +107,9 @@ Licensed under the MIT license
 	    //default s.lang is english
         } else {
 
-	        var lessThanAMinute = s.lessThanAMinuteString || 'Less than a minute';
+	        var lessThanAMinute = s.lessThanAMinuteString || '{{ site.var_less_than_a_minute_read }}';
 
-	        var minShortForm = 'min';
+	        var minShortForm = '{{ site.var_min_read }}';
 
         }
 

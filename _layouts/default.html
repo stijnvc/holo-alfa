@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="nl" prefix="og: http://ogp.me/ns#">
+<html lang="{{ site.lang }}" prefix="og: http://ogp.me/ns#">
 <head>
 	{% include head.html %}
 </head>
@@ -8,7 +8,9 @@
 		{% include header.html %}
 		{{ content }}
 	  <script>
-	    $('article').readingTime();
+	    $('article').readingTime({
+        lang: 'en',
+			});
 	    $("article").fitVids();
 	    $('article p').each(function(i){
 	    if ( ($(this).find('img').length) &&
