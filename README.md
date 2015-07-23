@@ -2,7 +2,7 @@
 
 A minimalist, mobile first Jekyll theme with focus on readability and content. Not ready for primetime yet.
 
-Current feature highlights:
+**Current feature highlights:**
 
 * Mobile friendly design
 * Extensive content styling
@@ -23,14 +23,16 @@ Current feature highlights:
   * Footer text
   * All (otherwise "hardcoded") text in theme. Useful for translating.
 
-On the to-do list:
+**On the to-do list:**
 
 * Next/previous post buttons on post pages
 * Social links
 * Authors also visible on front page
 * Read time visible on front page
 
-Screenshots! For if http://steinvc.github.io/blank-slate/ is broken.
+## Screenshots!
+
+For if http://steinvc.github.io/blank-slate/ is broken.
 
 ![Screenshot of front page](http://i.imgur.com/AR2o4Kl.png)
 
