@@ -4,6 +4,11 @@
 	{% include head.html %}
 </head>
 <body>
+	{% if page.cover-photo %}
+	<div class="cover-image-container">
+		<img alt="Cover image" src="{{ site.url }}/img/covers/{{ page.cover-photo }}">
+	</div>
+	{% endif %}
 	<div class="wrap">
 		{% include header.html %}
 		{{ content }}
@@ -13,12 +18,13 @@
 			});
 	    $("article").fitVids();
 	    $('article p').each(function(i){
-	    if ( ($(this).find('img').length) &&
-	       (!$.trim($(this).text()).length))
-	    {
-	      $(this).addClass('img-only');
-	    }
-	  });
+				if (($(this).find('img').length) && (!$.trim($(this).text()).length))  {
+					$(this).addClass('img-only');
+				}
+				if ($.trim($(this).text()).length - $.trim($(this).find('small').text()).length == 0 && ($(this).find('img').length)){
+					$(this).addClass('img-only-source');
+				}
+	  	});
 	  </script>
 	</div>
 	{% include footer.html %}
