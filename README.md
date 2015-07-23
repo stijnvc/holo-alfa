@@ -2,8 +2,6 @@
 
 A minimalist, mobile first Jekyll theme with focus on readability and content. Not ready for primetime yet.
 
-![Screenshot of front page](http://i.imgur.com/AR2o4Kl.png)
-
 Current feature highlights:
 
 * Mobile friendly design
@@ -31,5 +29,9 @@ On the to-do list:
 * Social links
 * Authors also visible on front page
 * Read time visible on front page
+
+Screenshots! For if http://steinvc.github.io/blank-slate/ is broken.
+
+![Screenshot of front page](http://i.imgur.com/AR2o4Kl.png)
 
 ![Screenshot of post page with cover photo](http://i.imgur.com/PSHTWqy.png)
