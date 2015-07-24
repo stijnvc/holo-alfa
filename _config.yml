@@ -1,27 +1,34 @@
 
-name: Blank Slate # The name of your website
-description: A lightweight, mobile first Jekyll theme. # Discription of your site, this will show up in google and in the header of every page (if subtitle is set to true).
-author: Stijn van Cuijk # Author to show with posts and in the rss feed
-author-info: (@<a href="#">twitter-handle</a>) # Optional text (html) to dislay after author name. Leave empty if you don't want it.
-url: http://steinvc.github.io/blank-slate # http://steinvc.github.io/blank-slate # The URL of the homepage of your site (without trailing slash).
+name: Blank Slate # The name of your website.
+description:
+  meta: A minimalist, mobile first Jekyll theme with focus on readability and content. Not ready for primetime yet. # Discription of your site, this will show up in google.
+  subtitle: A minimalist, mobile first Jekyll theme with focus on readability and content. Not ready for primetime yet. <a href="https://github.com/steinvc/blank-slate">&lt;/&gt; on Github</a> # Discription of your site, this will show up on the front page.
+show-subtitle: true
+footer-text: This is the footer.
+author:
+  name: Stijn van Cuijk # Author to show with posts and in the rss feed
+  info: (@<a href="#">twitter-handle</a>) # Optional text (html) to dislay after author name. Leave empty if you don't want it.
+url: # http://steinvc.github.io/blank-slate # The URL of the homepage of your site (without trailing slash).
 
-display-author: true # Display author on posts
-theme-color: 0, 240, 255 # Color used throughout the theme. Format: R, G, B
-subtitle: false # Set to false if you dan't want a subtitle on your site.
-display-author: true # Display the author of a post
+display-author-post-page: true # Display author on posts pages.
+display-author-front-page: true # Display author on the front page.
+theme-color: 0, 240, 255 # Color used throughout the theme. Format: R, G, B.
+theme-color-attr: "#00f0ff" # Toolbar color for chrome on android. https://developers.google.com/web/updates/2014/11/Support-for-theme-color-in-Chrome-39-for-Android
+ms-tile-color: "#00f0ff"
+display-author: true # Display the author of a post.
 paginate: 3 # Number of posts on each post-page.
+nav-breaking-point: 520px # Screen width on wich the navigation will change position.
 
-lang: nl # language attribute in <html> element
+lang: nl # language attribute in <html> element.
 
 date_format: "%b %-d, %Y" # http://alanwsmith.com/jekyll-liquid-date-formatting-examples
 
 # Customizable text. Usefull for translating into other languages.
-footer-text: This is the footer
-var_read: Read # text after each post summary on the homepage
+var_read: Read # Text after each post summary on the homepage.
 var_newer: Newer
 var_older: Older
 var_less_than_a_minute_read: Less than a minute read
-var_min_read: min read # text after reading time
+var_min_read: min read # Text after reading time. Example: 5 min read.
 var_post_by: Post by
 var_guest_post_by: Guest post by
 
