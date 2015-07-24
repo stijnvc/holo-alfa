@@ -2,16 +2,23 @@
 layout: default
 ---
 
+{% assign minutes = content | number_of_words | divided_by: 180 %}
+{% if minutes == 0 %}
+  {% assign read-time = site.var_less_than_a_minute_read %}
+{% else %}
+  {% assign read-time = minutes | append: "&nbsp;" | append: site.var_min_read %}
+{% endif %}
+
 <article>
-  <span class="date">{{ page.date | date: site.date_format }} • <span class="eta"></span></span>
+  <span class="meta">{{ page.date | date: site.date_format }} • {{ read-time }}</span>
 	<a href="#"><h1>{{ page.title }}</h1></a>
 		{{ content }}
-  {% if site.display-author %}
-    {% if post.author %}
-      <small><em>{{ site.var_guest_post_by }}: {{ post.author }} {{ post.author-info }}</em></small>
+  {% if site.display-author-post-page %}
+    {% if post.author.name %}
+      <small><em>{{ site.var_guest_post_by }}: {{ post.author.name }} {{ post.author.info }}</em></small>
     {% else %}
-      {% if site.author %}
-        <small><em>{{ site.var_post_by }}: {{ site.author }} {{ site.author-info }}</em></small>
+      {% if site.author.name %}
+        <small><em>{{ site.var_post_by }}: {{ site.author.name }} {{ site.author.info }}</em></small>
       {% endif %}
     {% endif %}
   {% endif %}
