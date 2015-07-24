@@ -31,3 +31,8 @@ A minimalist, mobile first Jekyll theme with focus on readability and content. A
 * Option for logo image instead of website title
 
 See it in action: http://steinvc.github.io/blank-slate/.
+
+---
+
+[MIT license](http://opensource.org/licenses/MIT)
+
