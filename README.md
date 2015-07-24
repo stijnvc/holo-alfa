@@ -1,6 +1,6 @@
 # Holo Alfa Jekyll theme
 
-A minimalist, mobile first Jekyll theme with focus on readability and content. Almost ready for primetime.
+A minimalist, mobile first Jekyll theme with focus on readability and content. It even has a pretentious title, what more do you want?
 
 **Current feature highlights:**
 
