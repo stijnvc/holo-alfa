@@ -22,7 +22,7 @@ body {
   font-family: "Crimson Text", Georgia, Cambria, "Times New Roman", Times, serif;
   font-size: 22px;
   -webkit-font-smoothing: antialiased;
-  font-weight: 300;
+  font-weight: 400;
   color: rgba(0, 0, 0, .72);
   background-color: white;
   background-repeat: no-repeat;
@@ -48,11 +48,21 @@ i, em {
 a {
   color: inherit;
   text-decoration: none;
-  background-image: linear-gradient(to bottom, rgba(0,0,0,0) 50%, rgba(0,0,0,.72) 50%);
+  position: relative;
+  background: -webkit-linear-gradient(rgba(0,0,0,.72),rgba(0,0,0,.72));
+  background: -moz-linear-gradient(rgba(0,0,0,.72),rgba(0,0,0,.72));
+  background: -o-linear-gradient(rgba(0,0,0,.72),rgba(0,0,0,.72));
+  background: -ms-linear-gradient(rgba(0,0,0,.72),rgba(0,0,0,.72));
+  background: linear-gradient(rgba(0,0,0,.72),rgba(0,0,0,.72));
+  -webkit-background-size: 1px 1px;
+  -moz-background-size: 1px 1px;
+  background-size: 1px 1px;
   background-repeat: repeat-x;
-  background-size: 2px 2px;
-  background-position: 0 16px;
-  font-weight: 600;
+  background-size: 1px 1px;
+  background-position: 0 87%;
+}
+.no-cssgradients a {
+  text-decoration: underline;
 }
 ul,
 ol {
@@ -90,25 +100,28 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 900;
   background-image: none;
   word-wrap: break-word;
+  word-spacing: normal;
+  letter-spacing: normal;
 }
 h1 {
-  font-size: 2.6em;
+  font-size: 2.2em;
 }
 h2 {
-  font-size: 1.6em;
+  font-size: 1.5em;
   margin-top: 40px;
   margin-bottom: 30px;
 }
 h3, h4, h5, h6 {
-  font-size: 1.3em;
+  font-size: 1.05em;
   margin-top: 40px;
   margin-bottom: 30px;
 }
-.date {
-  color: rgba(0, 0, 0, 0.4);
+.meta {
+  color: rgba(0, 0, 0, 0.5);
   display: block;
   margin-bottom: 10px;
   font-weight: 400;
+  font-size: .8em;
 }
 .fluid-width-video-wrapper {
   margin: 30px auto;
@@ -188,9 +201,19 @@ small {
   color: rgba(0,0,0,.5);
 }
 small a {
-  background-image: none;
-  text-decoration: underline;
-  font-weight: 400;
+  color: inherit;
+  background-image: -webkit-linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5));
+  background-image: -moz-linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5));
+  background-image: -o-linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5));
+  background-image: -ms-linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5));
+  background-image: linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5));
+}
+hr {
+  border:none;
+  background-color: rgba({{ site.theme-color }}, .4);
+  margin: 60px auto;
+  width: 30%;
+  height: 2px;
 }
 .cover-image-container {
   position: absolute;
@@ -258,6 +281,7 @@ article:last-of-type::after {
 a.read-more {
   display: inline-block;
   background-image: none;
+  font-weight: 600;
 }
 .pagination {
   margin-top: -30px;
@@ -279,7 +303,7 @@ a.read-more {
 }
 footer {
   font-size: 0.8em;
-  color: #008a93;
+  color: rgba(0,0,0,0.4);
   text-align: center;
   background-color: rgba({{ site.theme-color }}, 0.2);
   border-top: 1px solid rgba({{ site.theme-color }}, 0.4);
@@ -287,6 +311,7 @@ footer {
 }
 footer a {
   background-image: none;
+  font-weight: 600;
 }
 footer .inner {
   margin: 0 auto;
@@ -311,7 +336,6 @@ nav a {
   text-align: center;
   background-image: none;
   border-radius: 4px;
-  font-weight: 300;
   overflow: hidden;
   position: relative;
 }
@@ -324,6 +348,13 @@ nav a.current {
 .subtitle {
   margin: 30px 0;
 }
+.subtitle a {
+  background-image: -webkit-linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5));
+  background-image: -moz-linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5));
+  background-image: -o-linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5));
+  background-image: -ms-linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5));
+  background-image: linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5));
+}
 
 
 /* Structure overwrites */
@@ -334,9 +365,6 @@ nav a.current {
   }
   body {
     font-size: 24px;
-  }
-  a {
-    background-position: 0 18px;
   }
 }
 @media all and (min-width: 500px) {
@@ -368,9 +396,16 @@ nav a.current {
     margin: 70px;
   }
   h1 {
+    font-size: 2.6em;
     margin-bottom: -10px;
   }
-  h2, h3, h4, h5, h6 {
+  h2 {
+    font-size: 1.8em;
+    margin-top: 60px;
+    margin-bottom: -10px;
+  }
+  h3, h4, h5, h6 {
+    font-size: 1.2em;
     margin-top: 60px;
     margin-bottom: -10px;
   }
@@ -382,9 +417,13 @@ nav a.current {
   }
   blockquote {
     padding: 0 30px;
-    font-size: 1.3em;  }
+    font-size: 1.3em;
+  }
+  hr {
+    margin: 90px auto;
+  }
 }
-@media all and (min-width: 800px) {
+@media all and (min-width: {{ site.nav-breaking-point }}) {
   .website-title {
     text-align: left;
   }
@@ -400,6 +439,11 @@ nav a.current {
   }
   .subtitle {
     margin-top: 80px;
+  }
+}
+@media all and (min-width: 760px) {
+  h1 {
+    font-size: 2.9em;
   }
   article:last-of-type::after {
     content: "";
