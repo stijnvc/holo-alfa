@@ -1,9 +1,9 @@
 <header>
   <a href="{{ site.url }}/" class="website-title">{{ site.name }}</a>
   {% include navigation.html %}
-  {% if page.home == true and site.subtitle == true %}
+  {% if page.home == true and site.show-subtitle == true %}
   <div class="subtitle">
-    <p>{{ site.description }}</p>
+    <p>{{ site.description.subtitle }}</p>
   </div>
   {% endif %}
 </header>
