@@ -8,7 +8,7 @@ footer-text: This is the footer.
 author:
   name: Stijn van Cuijk # Author to show with posts and in the rss feed
   info: (@<a href="#">twitter-handle</a>) # Optional text (html) to dislay after author name. Leave empty if you don't want it.
-url: # http://steinvc.github.io/blank-slate # The URL of the homepage of your site (without trailing slash).
+url: http://steinvc.github.io/blank-slate # The URL of the homepage of your site (without trailing slash).
 
 display-author-post-page: true # Display author on posts pages.
 display-author-front-page: true # Display author on the front page.
