@@ -13,9 +13,6 @@
 		{% include header.html %}
 		{{ content }}
 	  <script>
-	    $('article').readingTime({
-        lang: 'en',
-			});
 	    $("article").fitVids();
 	    $('article p').each(function(i){
 				if (($(this).find('img').length) && (!$.trim($(this).text()).length))  {
