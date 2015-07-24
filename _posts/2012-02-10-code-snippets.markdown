@@ -5,7 +5,9 @@ title: Code Snippets
 
 ---
 
-Whenever you need to post a code snippet, use the liquid tags `hilight` and `endhilight` like this:
+Whenever you need to post a code snippet, use the liquid tags `hilight` and `endhilight`.
+
+like this:
 
 {% highlight css %}
 nav a:hover {

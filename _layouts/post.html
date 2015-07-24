@@ -14,8 +14,8 @@ layout: default
 	<a href="#"><h1>{{ page.title }}</h1></a>
 		{{ content }}
   {% if site.display-author-post-page %}
-    {% if post.author.name %}
-      <small><em>{{ site.var_guest_post_by }}: {{ post.author.name }} {{ post.author.info }}</em></small>
+    {% if page.author.name %}
+      <small><em>{{ site.var_guest_post_by }}: {{ page.author.name }} {{ page.author.info }}</em></small>
     {% else %}
       {% if site.author.name %}
         <small><em>{{ site.var_post_by }}: {{ site.author.name }} {{ site.author.info }}</em></small>
