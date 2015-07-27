@@ -14,8 +14,11 @@ A minimalist, mobile first Jekyll theme with focus on readability and content. I
 * Cover photo's
 * Support for authors and guest authors
 * Reading time on articles
+* Disqus comments
+* Automatic archive (without plugins)
 * Automatic sitemap en RSS feed
 * Customization (all in `_config.yml`)
+  * Social links
   * Theme color
   * Where and if to display authors
   * Date Format
@@ -26,13 +29,11 @@ A minimalist, mobile first Jekyll theme with focus on readability and content. I
 **On the to-do list:**
 
 * Next/previous post buttons on post pages
-* Social links
-* Comments
 * Option for logo image instead of website title
+* Placeholder favicons
 
 See it in action: http://steinvc.github.io/holo-alfa/.
 
 ---
 
 [MIT license](http://opensource.org/licenses/MIT)
-
