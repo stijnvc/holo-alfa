@@ -40,6 +40,9 @@
 <link href='//fonts.googleapis.com/css?family=Source+Code+Pro:400,700|Source+Sans+Pro:600,900|Crimson+Text:700italic,600,600italic,400,700,400italic' rel='stylesheet' type='text/css'>
 <link rel="stylesheet" href="{{ site.url }}/css/reset.css">
 <link rel="stylesheet" href="{{ site.url }}/css/pygments.css">
+{% if site.display-social-icons %}
+<link rel="stylesheet" href="{{ site.url }}/css/font-awesome.css">
+{% endif %}
 <link rel="stylesheet" href="{{ site.url }}/css/style.css">
 <!--[if gte IE 9]>
   <style type="text/css">
@@ -49,7 +52,7 @@
   </style>
 <![endif]-->
 
-{% if page.home != true or site.show-subtitle == false %}
+{% if page.home != true or site.show-subtitle == false and site.display-social-icons == false %}
 <style>
 header {
   margin-bottom: 40px;

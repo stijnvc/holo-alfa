@@ -1,0 +1,31 @@
+<div class="subtitle">
+  <p>
+  {% if site.show-subtitle %}
+    {{ site.description.subtitle }}
+  {% endif %}
+  {% if site.display-social-icons %}
+    {% if site.show-subtitle and site.display-social-icons %}
+    <br>
+    {% endif %}
+    {{ site.var_on_the_web }}:&nbsp;
+    {% if site.twitter %}<a class="fa fa-twitter" href="{{ site.twitter }}"></a>{% endif %}
+    {% if site.youtube %}<a class="fa fa-youtube" href="{{ site.youtube }}"></a>{% endif %}
+    {% if site.instagram %}<a class="fa fa-instagram" href="{{ site.instagram }}"></a>{% endif %}
+    {% if site.tumblr %}<a class="fa fa-tumblr" href="{{ site.tumblr }}"></a>{% endif %}
+    {% if site.facebook %}<a class="fa fa-facebook-official" href="{{ site.facebook }}"></a>{% endif %}
+    {% if site.google-plus %}<a class="fa fa-google-plus" href="{{ site.google-plus }}"></a>{% endif %}
+    {% if site.reddit %}<a class="fa fa-reddit" href="{{ site.reddit }}"></a>{% endif %}
+    {% if site.soundcloud %}<a class="fa fa-soundcloud" href="{{ site.soundcloud }}"></a>{% endif %}
+    {% if site.medium %}<a class="fa fa-medium" href="{{ site.medium }}"></a>{% endif %}
+    {% if site.linkedin %}<a class="fa fa-linkedin" href="{{ site.linkedin }}"></a>{% endif %}
+    {% if site.github %}<a class="fa fa-github" href="{{ site.github }}"></a>{% endif %}
+    {% if site.behance %}<a class="fa fa-behance" href="{{ site.behance }}"></a>{% endif %}
+    {% if site.codepen %}<a class="fa fa-codepen" href="{{ site.codepen }}"></a>{% endif %}
+    {% if site.dribbble %}<a class="fa fa-dribbble" href="{{ site.dribbble }}"></a>{% endif %}
+    {% if site.trello %}<a class="fa fa-trello" href="{{ site.trello }}"></a>{% endif %}
+    {% if site.stack-overflow %}<a class="fa fa-stack-overflow" href="{{ site.stack-overflow }}"></a>{% endif %}
+    {% if site.bitcoin %}<a class="fa fa-bitcoin" href="{{ site.bitcoin }}"></a>{% endif %}
+    {% if site.paypal %}<a class="fa fa-paypal" href="{{ site.paypal }}"></a>{% endif %}
+  {% endif %}
+  </p>
+</div>

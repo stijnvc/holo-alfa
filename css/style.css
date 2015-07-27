@@ -301,6 +301,9 @@ a.read-more {
 .pagination .next {
   float: right;
 }
+#disqus_thread {
+  margin-bottom: 50px;
+}
 footer {
   font-size: 0.8em;
   color: rgba(0,0,0,0.4);
@@ -347,6 +350,7 @@ nav a.current {
 }
 .subtitle {
   margin: 30px 0;
+  color: rgba(0,0,0,.5);
 }
 .subtitle a {
   background-image: -webkit-linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5));
@@ -437,8 +441,8 @@ nav a.current {
     display: inline-block;
     padding: 5px 8px;
   }
-  .subtitle {
-    margin-top: 80px;
+  .website-title {
+    margin-bottom: 80px;
   }
 }
 @media all and (min-width: 760px) {
