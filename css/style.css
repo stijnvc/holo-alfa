@@ -31,7 +31,7 @@ body {
 html, body {
   height: 100%;
 }
-p {
+p, form {
   line-height: 1.4;
   margin: 30px auto;
   word-wrap: break-word;
@@ -192,6 +192,7 @@ pre {
   border-radius: 4px;
   color: #f8f8f2;
   line-height: 1.4;
+  margin: 30px auto;
 }
 pre code {
   font-size: 14px;
@@ -280,6 +281,29 @@ a.read-more {
   background-image: none;
   font-weight: 600;
 }
+input[type="email"],
+textarea {
+  font: inherit;
+  display: block;
+  border-radius: 4px;
+  margin-bottom: 30px;
+  border: 1px solid rgba({{ site.text-color }},.1);
+  padding: 8px 15px;
+  width: 100%;
+  box-sizing: border-box;
+}
+input[type="submit"] {
+  font-family: "Source Sans Pro", Verdana, sans-serif;
+  font-size: inherit;
+  font-weight: 600;
+  color: rgba({{ site.text-color }},.76);
+  background-color: rgba({{ site.text-color }},.05);
+  border-radius: 4px;
+  padding: 8px 15px;
+  width: 100%;
+  border: 1px solid rgba({{ site.text-color }},.1);
+  cursor: pointer;
+}
 .pagination {
   margin-top: -30px;
   font-family: "Source Sans Pro", Verdana, sans-serif;
@@ -318,6 +342,7 @@ footer .inner {
   padding: 0 15px;
   max-width: 740px;
 }
+
 
 /* Content overwrites */
 
@@ -379,7 +404,9 @@ nav a.current {
   .fluid-width-video-wrapper,
   ol,
   ul,
-  p {
+  pre,
+  p,
+  form {
     margin: 40px 0;
   }
   ol, ul {
