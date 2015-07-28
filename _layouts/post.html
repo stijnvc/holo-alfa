@@ -11,7 +11,7 @@ layout: default
 
 <article>
   <span class="meta">{{ page.date | date: site.date_format }} • {{ read-time }}</span>
-	<a href="#"><h1>{{ page.title }}</h1></a>
+	<h1>{{ page.title }}</h1>
 		{{ content }}
   {% if site.display-author-post-page %}
     {% if page.author.name %}
@@ -23,6 +23,26 @@ layout: default
     {% endif %}
   {% endif %}
 </article>
+
+{% if site.display-next-prev-post and page.previous.url or site.display-next-prev-post and page.next.url %}
+<div class="pagination clearfix">
+  <div class="left">
+    {% if page.next.url %}
+      <a href="{{ page.next.url | prepend: site.url }}">‹ {{ site.var_next_post }}</a>
+    {% else %}
+      <span class="disabled">‹ {{ site.var_next_post }}</span>
+    {% endif %}
+  </div>
+  <div class="right">
+    {% if page.previous.url %}
+      <a href="{{ page.previous.url | prepend: site.url }}">{{ site.var_previous_post }} ›</a>
+    {% else %}
+      <span class="disabled">{{ site.var_previous_post }} ›</span>
+    {% endif %}
+  </div>
+</div>
+{% endif %}
+
 {% if site.disqus-shortname %}
 <div id="disqus_thread"></div>
 <script type="text/javascript">

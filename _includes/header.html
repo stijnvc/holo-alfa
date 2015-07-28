@@ -1,5 +1,12 @@
 <header>
-  <a href="{{ site.url }}/" class="website-title">{{ site.name }}</a>
+  <a href="{{ site.url }}/" class="website-title">
+    {% if site.logo-image %}
+      <img alt="{{ site.name }}" src="{{ site.url }}{{ site.logo-image }}">
+    {% else %}
+      {{ site.name }}
+    {% endif %}
+
+  </a>
   {% include navigation.html %}
   {% if page.home and site.show-subtitle or page.home and site.display-social-icons %}
 {% include subtitle.html %}

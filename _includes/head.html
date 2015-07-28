@@ -24,6 +24,15 @@
 <meta property="og:site_name" content="{{ site.name }}">
 <meta property="og:title" content="{% if page.title %}{{ page.title }} • {{ site.name }}{% else %}{{ site.name }}{% endif %}">
 <meta property="og:locale" content="{{ site.locale }}">
+{% if page.og-image %}
+  <meta property="og:image" content="{{ site.url }}{{ page.og-image }}">
+{% else %}
+  {% if page.cover-image %}
+    <meta property="og:image" content="{{ site.url }}{{ page.cover-image }}">
+  {% else %}
+    <meta property="og:image" content="{{ site.url }}/og-image.jpg">
+  {% endif %}
+{% endif %}
 <meta property="og:type" content="website">
 <meta property="og:url" content="{{ site.url }}{{ page.url }}">
 <meta property="og:description" content="

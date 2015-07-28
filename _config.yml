@@ -20,6 +20,9 @@ author:
 # The URL of the homepage of your site (without trailing slash).
 url: http://steinvc.github.io/holo-alfa
 
+# language attribute in <html> element.
+lang: en
+
 
 ##############
 # APPEREANCE #
@@ -32,8 +35,8 @@ display-social-icons: false
 
 footer-text: This is the footer.
 
-# language attribute in <html> element.
-lang: en
+# Preferrably 64px in height. Leave empty = disbale.
+logo-image: # /img/logo.png
 
 # Toolbar color for Chrome on Android.
 theme-color-attr: "#00f0ff"
@@ -42,7 +45,17 @@ theme-color-attr: "#00f0ff"
 ms-tile-color: "#00f0ff"
 
 # Color used throughout the theme. Format: R, G, B.
-theme-color: 0, 240, 255
+theme-color: 0, 240, 255 # Original: 0, 240, 255
+
+# Text color used throughout the theme. Format: R, G, B.
+text-color: 0, 0, 0 # Original: 0, 0, 0
+
+# Background color used throughout the theme. Format: R, G, B.
+# Note: if you change the background color AND you use cover images, you should
+#       also change the CSS gradient in "_includes/gradient.css" to match the
+#       background color. Edit and copy it from here:
+#       http://www.colorzilla.com/gradient-editor/#ffffff+0,ffffff+100&0+0,1+100
+background-color: 255, 255, 255 # Original: 255, 255, 255
 
 display-author-post-page: true
 display-author-front-page: true
@@ -56,6 +69,9 @@ nav-breaking-point: 520px
 
 # Number of posts on each page.
 paginate: 3
+
+# Display links for the previous and next post on post pages.
+display-next-prev-post: false
 
 # Leave empty if you don't want comments on post pages.
 disqus-shortname:
@@ -97,6 +113,8 @@ var_on_the_web: On the web
 var_read: Read # Text after each post summary on the homepage.
 var_newer: Newer
 var_older: Older
+var_next_post: Next post
+var_previous_post: Previous post
 var_less_than_a_minute_read: Less than a minute read
 var_min_read: min read # Text after reading time. Example: 5 min read.
 var_post_by: Post by

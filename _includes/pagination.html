@@ -1,5 +1,5 @@
 <div class="pagination clearfix">
-  <div class="previous">
+  <div class="left">
     {% if paginator.previous_page %}
       {% if paginator.page == 2 %}
         <a href="{{ site.url }}/">‹ {{ site.var_newer }}</a>
@@ -10,7 +10,7 @@
       <span class="disabled">‹ {{ site.var_newer }}</span>
     {% endif %}
   </div>
-  <div class="next">
+  <div class="right">
     {% if paginator.next_page %}
       <a href="{{ site.url }}/page-{{paginator.next_page}}/">{{ site.var_older }} ›</a>
     {% else %}
