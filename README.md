@@ -45,6 +45,7 @@ There are some customizations that can't be done in `_config.yml`. These include
 
 * Editing the About, Contact and Archive page.
 * Adding or removing pages from the navigation. This can be done in `\_includes\navigation.html`.
+* The "thanks" page after a message has been send through the contact page: `thanks.md`
 * The gradient on cover images: `\_includes\gradient.css` (this is explained in `_config.yml`).
 
 Also make sure to replace the placeholder favicons and the `\img\og-image.jpg` with your own.
