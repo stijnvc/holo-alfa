@@ -99,6 +99,7 @@ h1, h2, h3, h4, h5, h6 {
   font-family: "Source Sans Pro", Verdana, sans-serif;
   font-weight: 900;
   background-image: none;
+  text-decoration: none;
   word-wrap: break-word;
   word-spacing: normal;
   letter-spacing: normal;
@@ -279,6 +280,7 @@ article:last-of-type::after {
 a.read-more {
   display: inline-block;
   background-image: none;
+  text-decoration: none;
   font-weight: 600;
 }
 input[type="email"],
@@ -312,6 +314,7 @@ input[type="submit"] {
 }
 .pagination a {
   background-image: none;
+  text-decoration: none;
 }
 .pagination .disabled {
   color: rgba({{ site.text-color }},.1);
@@ -335,6 +338,7 @@ footer {
 }
 footer a {
   background-image: none;
+  text-decoration: none;
   font-weight: 600;
 }
 footer .inner {
@@ -353,13 +357,15 @@ footer .inner {
   text-align: center;
   display: block;
   background-image: none;
-  color: rgba({{ site.text-color }}, .76)
+  text-decoration: none;
+  color: rgba({{ site.text-color }}, .76);
 }
 nav a {
   display: block;
   padding: 5px;
   text-align: center;
   background-image: none;
+  text-decoration: none;
   border-radius: 4px;
   overflow: hidden;
   position: relative;
