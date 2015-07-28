@@ -5,24 +5,29 @@ name: Holo Alfa
 description:
 
   # Discription of your site, this will show up in google.
-  meta: Holo Alfa is a minimalist, mobile first Jekyll theme with focus on readability and content. Not ready for primetime yet.
+  meta: Holo Alfa is a minimalist, mobile first Jekyll theme with focus on readability and content.
 
   # Discription of your site, this will show up on the front page.
-  subtitle: Holo Alfa is a minimalist, mobile first Jekyll theme with focus on readability and content. Not ready for primetime yet. <a href="https://github.com/steinvc/holo-alfa">&lt;/&gt; on Github</a>.
+  subtitle: Holo Alfa is a minimalist, mobile first Jekyll theme with focus on readability and content. <a href="https://github.com/steinvc/holo-alfa">&lt;/&gt; on Github</a>.
 
 author:
   name: Stijn van Cuijk
 
+  # Necessary for contact page
+  email: stijnvcuijk@gmail.com
+
   # Optional text (html) to dislay after author name. Leave empty if you don't
   # want it.
-  info: (@<a href="#">twitter-handle</a>)
+  info:
 
-# The URL of the homepage of your site (without trailing slash).
+# The URL of the homepage of your site (without trailing slash). Leave this
+# empty when you run Jekyll locally.
 url: http://steinvc.github.io/holo-alfa
 
 # language attribute in <html> element.
 lang: en
 
+# FROM THIS POINT ON EVERYTHING IS OPTIONAL
 
 ##############
 # APPEREANCE #
@@ -33,7 +38,7 @@ lang: en
 show-subtitle: true
 display-social-icons: false
 
-footer-text: This is the footer.
+footer-text: This is the footer.<br><a href="http://steinvc.github.io/holo-alfa/">Holo Alfa</a> Jekyll theme crafted by <a href="http://steinvc.github.io/holo-alfa/">Stijn</a>.
 
 # Preferrably 64px in height. Leave empty = disbale.
 logo-image: # /img/logo.png
@@ -52,7 +57,7 @@ text-color: 0, 0, 0 # Original: 0, 0, 0
 
 # Background color used throughout the theme. Format: R, G, B.
 # Note: if you change the background color AND you use cover images, you should
-#       also change the CSS gradient in "_includes/gradient.css" to match the
+#       also change the CSS gradient in "_includes\gradient.css" to match the
 #       background color. Edit and copy it from here:
 #       http://www.colorzilla.com/gradient-editor/#ffffff+0,ffffff+100&0+0,1+100
 background-color: 255, 255, 255 # Original: 255, 255, 255
@@ -119,11 +124,15 @@ var_less_than_a_minute_read: Less than a minute read
 var_min_read: min read # Text after reading time. Example: 5 min read.
 var_post_by: Post by
 var_guest_post_by: Guest post by
+var_your_email: Your email
+var_your_message: Your message
 
 
-###############
-# OTHER STUFF #
-###############
+##################
+# BUILD SETTINGS #
+##################
+
+# You don't have to change these.
 
 highlighter: pygments
 kramdown:
