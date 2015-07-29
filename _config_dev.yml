@@ -20,8 +20,10 @@ author:
   # want it.
   info:
 
-url: http://steinvc.github.io
-baseurl: "/holo-alfa"
+# The URL of the homepage of your site (without trailing slash). Leave this
+# empty when you run Jekyll locally.
+url: http://localhost:4000
+baseurl: ""
 
 # language attribute in <html> element.
 lang: en

@@ -28,14 +28,14 @@ layout: default
 <div class="pagination clearfix">
   <div class="left">
     {% if page.next.url %}
-      <a href="{{ page.next.url | prepend: site.url }}">‹ {{ site.var_next_post }}</a>
+      <a href="{{ page.next.url | prepend: site.baseurl }}">‹ {{ site.var_next_post }}</a>
     {% else %}
       <span class="disabled">‹ {{ site.var_next_post }}</span>
     {% endif %}
   </div>
   <div class="right">
     {% if page.previous.url %}
-      <a href="{{ page.previous.url | prepend: site.url }}">{{ site.var_previous_post }} ›</a>
+      <a href="{{ page.previous.url | prepend: site.baseurl }}">{{ site.var_previous_post }} ›</a>
     {% else %}
       <span class="disabled">{{ site.var_previous_post }} ›</span>
     {% endif %}

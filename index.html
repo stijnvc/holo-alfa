@@ -26,12 +26,12 @@ home: true
         {% endif %}
       {% endif %}
       {{ post.date | date: site.date_format }} • {{ read-time }}</span>
-  	<a href="{{ post.url | prepend: site.url }}"><h1>{{ post.title }}</h1></a>
+  	<a href="{{ post.url | prepend: site.baseurl }}"><h1>{{ post.title }}</h1></a>
       <p>
       {% if post.summary %}
-        {{ post.summary }}&nbsp;<a class="read-more" href="{{ post.url | prepend: site.url }}">{{ site.var_read }}  →</a>
+        {{ post.summary }}&nbsp;<a class="read-more" href="{{ post.url | prepend: site.baseurl }}">{{ site.var_read }}  →</a>
       {% else %}
-        {{ post.excerpt | remove: '<p>' | remove: '</p>' }}&nbsp;<a class="read-more" href="{{ post.url | prepend: site.url }}">{{ site.var_read }}  →</a>
+        {{ post.excerpt | remove: '<p>' | remove: '</p>' }}&nbsp;<a class="read-more" href="{{ post.url | prepend: site.baseurl }}">{{ site.var_read }}  →</a>
       {% endif %}
       </p>
 
