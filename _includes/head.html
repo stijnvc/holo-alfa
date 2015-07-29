@@ -25,12 +25,12 @@
 <meta property="og:title" content="{% if page.title %}{{ page.title }} • {{ site.name }}{% else %}{{ site.name }}{% endif %}">
 <meta property="og:locale" content="{{ site.lang }}">
 {% if page.og-image %}
-  <meta property="og:image" content="{{ site.url }}{{ site.baseurl }}{{ page.og-image }}">
+  <meta property="og:image" content="{{ site.url }}{{ site.baseurl }}/img/{{ page.og-image }}">
 {% else %}
   {% if page.cover-image %}
-    <meta property="og:image" content="{{ site.url }}{{ site.baseurl }}{{ page.cover-image }}">
+    <meta property="og:image" content="{{ site.url }}{{ site.baseurl }}/img/{{ page.cover-image }}">
   {% else %}
-    <meta property="og:image" content="{{ site.url }}{{ site.baseurl }}/og-image.jpg">
+    <meta property="og:image" content="{{ site.url }}{{ site.baseurl }}/img/og-image.jpg">
   {% endif %}
 {% endif %}
 <meta property="og:type" content="website">
