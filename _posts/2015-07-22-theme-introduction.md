@@ -40,7 +40,7 @@ Use Markdown's `>` to create a quote.
 
 Large enough images will be wider than the page.
 
-![Forest]({{ site.url }}/img/forest.jpg) <small>Source: [imgur.com](http://imgur.com/KTfsVZL)</small>
+![Forest]({{ site.baseurl }}/img/forest.jpg) <small>Source: [imgur.com](http://imgur.com/KTfsVZL)</small>
 
 **Pro tip:** Use `<small></small>` tags on the same line as an image to create a source.
 
