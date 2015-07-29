@@ -5,6 +5,7 @@ language: ruby
 rvm:
   - 2.0.0 # otherwise public_suffix will fail to install
 script:
+  - jekyll new
   - bundle exec jekyll build --config _config.yml,_config_dev.yml
   - bundle exec htmlproof ./_site --only-4xx --check-favicon --check-html
 env:
