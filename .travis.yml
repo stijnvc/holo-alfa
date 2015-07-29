@@ -1,3 +1,6 @@
+branches:
+  only:
+    - gh-pages
 language: ruby
 rvm:
   - 2.0.0 # otherwise public_suffix will fail to install
