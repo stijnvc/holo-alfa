@@ -135,6 +135,7 @@ var_your_message: Your message
 
 # You don't have to change these.
 
+exclude: [vendor]
 highlighter: pygments
 kramdown:
   input: GFM
