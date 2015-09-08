@@ -4,10 +4,10 @@ name: Holo Alfa
 
 description:
 
-  # Discription of your site, this will show up in google.
+  # Description of your site. This will show up in google.
   meta: Holo Alfa is a minimalist, mobile first Jekyll theme with focus on readability and content.
 
-  # Discription of your site, this will show up on the front page.
+  # Description of your site. This will show up on the front page.
   subtitle: Holo Alfa is a minimalist, mobile first Jekyll theme with focus on readability and content. <a href="https://github.com/steinvc/holo-alfa">&lt;/&gt; on Github</a>.
 
 author:
@@ -16,7 +16,7 @@ author:
   # Necessary for contact page
   email: stijnvcuijk@gmail.com
 
-  # Optional text (html) to dislay after author name. Leave empty if you don't
+  # Optional text (html) to display after author name. Leave empty if you don't
   # want it.
   info:
 
@@ -41,7 +41,7 @@ display-social-icons: false
 
 footer-text: This is the footer.<br><a href="http://steinvc.github.io/holo-alfa/">Holo Alfa</a> Jekyll theme crafted by <a href="http://steinvc.github.io/holo-alfa/">Stijn</a>.
 
-# Preferrably 64px in height. Leave empty = disbale.
+# Preferably 64px in height. Leave empty = disable.
 logo-image: # /img/logo.png
 
 # Toolbar color for Chrome on Android.
@@ -69,7 +69,7 @@ display-author-front-page: true
 # http://alanwsmith.com/jekyll-liquid-date-formatting-examples
 date_format: "%b %-d, %Y"
 
-# Minimal screen-width after wich the navigation will change position from
+# Minimal screen-width after which the navigation will change position from
 # vertical to horizontal.
 nav-breaking-point: 520px
 
@@ -113,7 +113,7 @@ paypal:
 # CUSTOMIZABLE TEXT #
 #####################
 
-# Usefull for translating into other languages.
+# Useful for translating into other languages.
 
 var_on_the_web: On the web
 var_read: Read # Text after each post summary on the homepage.
