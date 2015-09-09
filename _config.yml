@@ -11,10 +11,10 @@ description:
   subtitle: Holo Alfa is a minimalist, mobile first Jekyll theme with focus on readability and content. <a href="https://github.com/steinvc/holo-alfa">&lt;/&gt; on Github</a>.
 
 author:
-  name: Stijn van Cuijk
+  name: Dr. Jekyll # Change this!
 
   # Necessary for contact page
-  email: stijnvcuijk@gmail.com
+  email: your@email.com # Change this!
 
   # Optional text (html) to display after author name. Leave empty if you don't
   # want it.
