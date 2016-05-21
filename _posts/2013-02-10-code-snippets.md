@@ -4,7 +4,7 @@ title: Code Snippets
 
 Whenever you need to post a code snippet, use the liquid tags `hilight` and `endhilight`.
 
-excerpt_separator
+<!--more-->
 
 like this:
 
