@@ -4,6 +4,8 @@ title: Code Snippets
 
 Whenever you need to post a code snippet, use the liquid tags `hilight` and `endhilight`.
 
+<!--more-->
+
 like this:
 
 {% highlight css %}

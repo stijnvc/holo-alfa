@@ -5,6 +5,8 @@ cover-image: hipster.jpg
 
 This post is a showcase of what Holo Alfa looks like, and a reference guide for how you can use it to make your blog shine.
 
+<!--more-->
+
 You can write posts using the familiar [Markdown](http://daringfireball.net/projects/markdown/) syntax, plus some extra's from [GFM](https://help.github.com/articles/github-flavored-markdown/). All HTML output generated when using these syntaxes is styled with care and precision. Generous whitespace is used to give your content some breathing room.
 
 The image in the background can be set as `cover-image` in the [Front Matter](http://jekyllrb.com/docs/frontmatter/) of a post or page. The "fade to white" will be created automatically. Cover images are stored in `/img/covers/`.
