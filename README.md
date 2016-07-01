@@ -1,4 +1,4 @@
-# Holo Alfa Jekyll theme #
+# Holo Alfa Jekyll theme [![Build Status](https://travis-ci.org/steinvc/holo-alfa.svg?branch=master)](https://travis-ci.org/steinvc/holo-alfa) #
 
 ![Screenshot](http://i.imgur.com/Gi46aag.jpg)
 
