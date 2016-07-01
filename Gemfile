@@ -1,3 +1,3 @@
-source 'http://rubygems.org'
-gem 'github-pages'
-gem 'html-proofer'
+source 'https://rubygems.org'
+gem 'rouge'
+gem 'github-pages', group: :jekyll_plugins
