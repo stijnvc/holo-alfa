@@ -29,8 +29,6 @@ If you're new to Jekyll, check out http://jekyllrb.com/ and read up on Jekyll. I
 * [Another great resource to learn about Jekyll](http://www.smashingmagazine.com/2014/08/build-blog-jekyll-github-pages/)
 * [Github's guide to using Jekyll with Pages](https://help.github.com/articles/using-jekyll-with-pages/)
 
-If you run one of the latest versions of Jekyll, this theme will work with no* problems.
-
 ### Installing ##
 
 As simple as forking the repository, and then clone it so you can edit the files locally.
@@ -52,13 +50,7 @@ Also make sure to replace the placeholder favicons and the `\img\og-image.jpg` w
 
 ### Start the Jekyll server ###
 
-Run this command at the root of your site:
-
-```
-$ jekyll serve
-```
-
-> To run Jekyll in a way that matches the GitHub Pages build server, run Jekyll with Bundler. Use the command `bundle exec jekyll serve`.
+You can learn how to do this by reading [this](https://help.github.com/articles/using-jekyll-with-pages/).
 
 When everything is OK, your site should now be available at `http://localhost:4000`.
 
