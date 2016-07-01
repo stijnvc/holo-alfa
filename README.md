@@ -37,7 +37,7 @@ As simple as forking the repository, and then clone it so you can edit the files
 
 Edit `_config.yml`!
 
-You can find `_config.yml` in your site's root directory. This configuration file contains some necessary settings and some optional customization settings. **All settings are explained in `_config.yml` itself.**
+You can find `_config.yml` in your site's root directory. This configuration file contains some necessary settings and some optional customization settings. **All settings are explained in `_config.yml` itself.** Also make sure to use the developement configuration file (`_config_dev.yml`) for running your site locally. This way you don't get your URLs mixed up.
 
 There are some customizations that can't be done in `_config.yml`. These include:
 
@@ -51,6 +51,8 @@ Also make sure to replace the placeholder favicons and the `\img\og-image.jpg` w
 ### Start the Jekyll server ###
 
 You can learn how to do this by reading [this](https://help.github.com/articles/using-jekyll-with-pages/).
+
+> Tip: to run your site locally with `_config_dev.yml` as configuration file, use this command at the root of your site `bundle exec jekyll serve --config _config_dev.yml`.
 
 When everything is OK, your site should now be available at `http://localhost:4000`.
 
