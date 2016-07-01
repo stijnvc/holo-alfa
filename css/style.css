@@ -23,7 +23,7 @@ body {
   font-size: 22px;
   -webkit-font-smoothing: antialiased;
   font-weight: 400;
-  color: rgba({{ site.text-color }}, .76);
+  color: rgba({{ site.text-color }}, .8);
   background-color: rgb({{ site.background-color }});
   background-repeat: no-repeat;
   background-size: 100%;
