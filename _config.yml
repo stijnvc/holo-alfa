@@ -1,27 +1,27 @@
 
 # The name of your website.
-name: Holo Alfa
+name: The Housebuilder
 
 description:
 
   # Description of your site. This will show up in google.
-  meta: Holo Alfa is a minimalist, mobile first Jekyll theme with focus on readability and content.
+  meta: Blogging Adventures, Rambling and Scribbles. 
 
   # Description of your site. This will show up on the front page.
-  subtitle: Holo Alfa is a minimalist, mobile first Jekyll theme with focus on readability and content. <a href="https://github.com/steinvc/holo-alfa">&lt;/&gt; on Github</a>.
-
+  subtitle: Personal Blog for adventures, rambling and scribbles. 
+  
 author:
-  name: Dr. Jekyll # Change this!
+  name: Siddharth Kanungo # Change this!
 
   # Necessary for contact page
-  email: your@email.com # Change this!
+  email: siddharth.soka@gmail.com # Change this!
 
   # Optional text (html) to display after author name. Leave empty if you don't
   # want it.
   info:
 
-url: http://steinvc.github.io
-baseurl: "/holo-alfa"
+url: http://wzard.github.io
+baseurl: "/"
 
 # language attribute in <html> element.
 lang: en
