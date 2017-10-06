@@ -36,6 +36,8 @@ lang: en
 # {% include subtitle.html %} to include it anywhere you want.
 show-subtitle: true
 display-social-icons: false
+# If you want social links to open in a new tab, set this as true
+social-icons-open-newtab: true
 
 footer-text: This is the footer.<br><a href="http://steinvc.github.io/holo-alfa/">Holo Alfa</a> Jekyll theme crafted by <a href="http://steinvc.github.io/holo-alfa/">Stijn</a>.
 
