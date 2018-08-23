@@ -1,6 +1,6 @@
 # Holo Alfa Jekyll theme [![Build Status](https://travis-ci.org/steinvc/holo-alfa.svg?branch=master)](https://travis-ci.org/steinvc/holo-alfa) #
 
-`This project is no longer maintained. It will probably still work fine though.`
+>This project is no longer maintained. It will probably still work fine though.
 
 ![Screenshot](http://i.imgur.com/Gi46aag.jpg)
 
