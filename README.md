@@ -1,5 +1,7 @@
 # Holo Alfa Jekyll theme [![Build Status](https://travis-ci.org/steinvc/holo-alfa.svg?branch=master)](https://travis-ci.org/steinvc/holo-alfa) #
 
+`This project is no longer maintained. It will probably still work fine though.`
+
 ![Screenshot](http://i.imgur.com/Gi46aag.jpg)
 
 Holo Alfa is a minimalist, mobile first Jekyll theme with focus on readability and content. Created for free and fun by Stijn. Also works great as a base to build your own theme on.
