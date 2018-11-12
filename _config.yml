@@ -26,6 +26,7 @@ baseurl:
 # language attribute in <html> element.
 lang: en
 
+encoding: utf-8
 # FROM THIS POINT ON EVERYTHING IS OPTIONAL
 
 ##############

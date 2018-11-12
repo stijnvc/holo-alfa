@@ -16,6 +16,8 @@ local.properties
 .settings/
 .loadpath
 
+# Webstorm
+.idea/
 # External tool builders
 .externalToolBuilders/
 
