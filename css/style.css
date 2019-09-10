@@ -20,7 +20,7 @@
 
 body {
   font-family: "Crimson Text", Georgia, Cambria, "Times New Roman", Times, serif;
-  font-size: 22px;
+  font-size: 20px;
   -webkit-font-smoothing: antialiased;
   font-weight: 400;
   color: rgba({{ site.text-color }}, .8);
@@ -394,9 +394,6 @@ nav a.current {
 @media all and (min-width: 370px) {
   .website-title {
     font-size: 32px;
-  }
-  body {
-    font-size: 24px;
   }
 }
 @media all and (min-width: 500px) {
