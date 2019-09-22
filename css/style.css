@@ -4,6 +4,7 @@
 ::selection {
   background: rgba({{ site.theme-color }}, .2);
 }
+
 ::-moz-selection {
   background: rgba({{ site.theme-color }}, .2);
 }
@@ -19,7 +20,7 @@
 /* Content */
 
 body {
-  font-family: "Crimson Text", Georgia, Cambria, "Times New Roman", Times, serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
   font-size: 20px;
   -webkit-font-smoothing: antialiased;
   font-weight: 400;
@@ -47,19 +48,11 @@ i, em {
 }
 a {
   color: inherit;
-  text-decoration: none;
-  position: relative;
-  background: -webkit-linear-gradient(rgba({{ site.text-color }},.76),rgba({{ site.text-color }},.76));
-  background: -moz-linear-gradient(rgba({{ site.text-color }},.76),rgba({{ site.text-color }},.76));
-  background: -o-linear-gradient(rgba({{ site.text-color }},.76),rgba({{ site.text-color }},.76));
-  background: -ms-linear-gradient(rgba({{ site.text-color }},.76),rgba({{ site.text-color }},.76));
-  background: linear-gradient(rgba({{ site.text-color }},.76),rgba({{ site.text-color }},.76));
-  -webkit-background-size: 1px 1px;
-  -moz-background-size: 1px 1px;
-  background-size: 1px 1px;
-  background-repeat: repeat-x;
-  background-size: 1px 1px;
-  background-position: 0 87%;
+  text-decoration: underline;
+  transition: all ease 0.3s;
+}
+a:hover {
+  color: rgba({{ site.theme-color }},1);
 }
 .no-cssgradients a {
   text-decoration: underline;
@@ -96,7 +89,7 @@ img {
   text-align: center;
 }
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Source Sans Pro", Verdana, sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
   font-weight: 900;
   background-image: none;
   text-decoration: none !important;
@@ -114,8 +107,7 @@ h2 {
 }
 h3, h4, h5, h6 {
   font-size: 1.05em;
-  margin-top: 40px;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 .meta {
   color: rgba({{ site.text-color }}, 0.5);
@@ -262,8 +254,7 @@ nav {
 article {
   margin-top: 30px;
 }
-article::after,
-header::after {
+article::after {
   margin: 50px 0;
   content: "•";
   line-height: 0;
@@ -295,7 +286,7 @@ textarea {
   box-sizing: border-box;
 }
 input[type="submit"] {
-  font-family: "Source Sans Pro", Verdana, sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
   font-size: inherit;
   font-weight: 600;
   color: rgba({{ site.text-color }},.76);
@@ -308,7 +299,7 @@ input[type="submit"] {
 }
 .pagination {
   margin-top: -30px;
-  font-family: "Source Sans Pro", Verdana, sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
   font-weight: 600;
   padding-bottom: 50px;
 }
@@ -334,7 +325,8 @@ footer {
   text-align: center;
   background-color: rgba({{ site.text-color }}, 0.05);
   border-top: 1px solid rgba({{ site.text-color }}, 0.1);
-  height: 140px;
+  height: auto;
+  margin-top: 50px;
 }
 footer a {
   background-image: none;
@@ -343,15 +335,19 @@ footer a {
 }
 footer .inner {
   margin: 0 auto;
-  padding: 0 15px;
   max-width: 740px;
+}
+
+.footer-links a {
+  margin: 0 10px;
+  display: inline-block;
 }
 
 
 /* Content overwrites */
 
 .website-title {
-  font-family: "Source Sans Pro", Verdana, sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
   font-weight: 600;
   font-size: 24px;
   text-align: center;
@@ -371,10 +367,11 @@ nav a {
   position: relative;
 }
 nav a:hover {
-  color: rgba({{ site.text-color }},.76);
+  color: rgba({{ site.theme-color }},1);
 }
+
 nav a.current {
-  color: rgba({{ site.text-color }}, .76)
+  color: rgba({{ site.theme-color }}, 1)
 }
 .subtitle {
   margin: 30px 0;
@@ -389,6 +386,68 @@ nav a.current {
 }
 
 
+.columns {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.col-6 {
+  width: 99%;
+  padding: 0 0.5%;
+}
+
+.join-card {
+  text-align: center;
+  margin: 20px 0;
+  color: white;
+  padding: 30px 0;
+  border-radius: 3px;
+}
+
+.slack {
+  background: #4B154C;
+}
+
+.discord {
+  background: #7289DA;
+}
+
+
+.btn {
+  padding: 15px 30px;
+  width: 60%;
+  color: black;
+  background: white;
+  margin: 0;
+  box-sizing: border-box;
+  display: inline-block;
+  text-decoration: none;
+  border-radius: 3px;
+  transition: all ease 0.3s;
+}
+
+.btn:hover {
+  background: rgba(0, 0, 0 , .2);
+  color: white;
+}
+
+.platform-icon {
+  margin-bottom: 10px;
+}
+
+.header-content {
+  text-align: center;
+}
+
+.join-us {
+  text-align: center;
+  margin: 0;
+}
+
+.main-header {
+  color: rgba({{ site.theme-color }});
+}
+
 /* Structure overwrites */
 
 @media all and (min-width: 370px) {
@@ -401,7 +460,7 @@ nav a.current {
     padding: 0 30px;
   }
   footer .inner {
-    padding: 0 30px;
+    padding: 30px 30px;
   }
   .subtitle,
   .fluid-width-video-wrapper,
@@ -437,8 +496,6 @@ nav a.current {
   }
   h3, h4, h5, h6 {
     font-size: 1.2em;
-    margin-top: 60px;
-    margin-bottom: -10px;
   }
   .img-only {
     margin: 0 -30px;
@@ -470,6 +527,10 @@ nav a.current {
   }
   .website-title {
     margin-bottom: 80px;
+  }
+  .col-6 {
+    width: 49%;
+    padding: 0 0.5%;
   }
 }
 @media all and (min-width: 760px) {

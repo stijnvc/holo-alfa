@@ -3,9 +3,28 @@ layout: default
 home: true
 ---
 
+<p class="join-us"><strong>Join us on Slack or Discord</strong></p>
+<div class="columns">
+    <div class="col-6">
+      <div class="join-card discord">
+          <svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="discord" class="svg-inline--fa fa-discord fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg" width="13%" viewBox="0 0 448 512"><path fill="currentColor" d="M297.216 243.2c0 15.616-11.52 28.416-26.112 28.416-14.336 0-26.112-12.8-26.112-28.416s11.52-28.416 26.112-28.416c14.592 0 26.112 12.8 26.112 28.416zm-119.552-28.416c-14.592 0-26.112 12.8-26.112 28.416s11.776 28.416 26.112 28.416c14.592 0 26.112-12.8 26.112-28.416.256-15.616-11.52-28.416-26.112-28.416zM448 52.736V512c-64.494-56.994-43.868-38.128-118.784-107.776l13.568 47.36H52.48C23.552 451.584 0 428.032 0 398.848V52.736C0 23.552 23.552 0 52.48 0h343.04C424.448 0 448 23.552 448 52.736zm-72.96 242.688c0-82.432-36.864-149.248-36.864-149.248-36.864-27.648-71.936-26.88-71.936-26.88l-3.584 4.096c43.52 13.312 63.744 32.512 63.744 32.512-60.811-33.329-132.244-33.335-191.232-7.424-9.472 4.352-15.104 7.424-15.104 7.424s21.248-20.224 67.328-33.536l-2.56-3.072s-35.072-.768-71.936 26.88c0 0-36.864 66.816-36.864 149.248 0 0 21.504 37.12 78.08 38.912 0 0 9.472-11.52 17.152-21.248-32.512-9.728-44.8-30.208-44.8-30.208 3.766 2.636 9.976 6.053 10.496 6.4 43.21 24.198 104.588 32.126 159.744 8.96 8.96-3.328 18.944-8.192 29.44-15.104 0 0-12.8 20.992-46.336 30.464 7.68 9.728 16.896 20.736 16.896 20.736 56.576-1.792 78.336-38.912 78.336-38.912z"></path></svg>
+          <h3>Discord</h3>
+          <a class="btn" href="https://join.slack.com/t/communitychathq/shared_invite/enQtNzY4MjQ1OTMwNjkyLTg5MGFmYmYwMTUwMTlmZGEzY2EzOTNlZTlmOTA0NDdjMjQyZTBlYWY0YTkzMDg5YmNjYWZkM2NhZmYwZGE0NGY">Join on Discord</a>
+      </div>
+    </div>
+    <div class="col-6">
+      <div class="join-card slack">
+        <svg class="platform-icon" xmlns="http://www.w3.org/2000/svg" width="12%" viewBox="0 0 90.07 90"><defs><style>.cls-1{fill:#e01e5a;}.cls-1,.cls-2,.cls-3,.cls-4{fill-rule:evenodd;}.cls-2{fill:#36c5f0;}.cls-3{fill:#2eb67d;}.cls-4{fill:#ecb22e;}</style></defs><title>slack-logo-icon</title><g id="Layer_2" data-name="Layer 2"><g id="Layer_1-2" data-name="Layer 1"><path class="cls-1" d="M19,56.9a9.46,9.46,0,1,1-9.46-9.46H19Zm4.73,0a9.46,9.46,0,0,1,18.92,0V80.54a9.46,9.46,0,0,1-18.92,0Z"/><path class="cls-2" d="M33.18,18.92a9.46,9.46,0,1,1,9.46-9.46v9.46Zm0,4.8a9.46,9.46,0,0,1,0,18.92H9.46a9.46,9.46,0,0,1,0-18.92Z"/><path class="cls-3" d="M71.08,33.18a9.46,9.46,0,1,1,9.46,9.46H71.08Zm-4.73,0a9.46,9.46,0,1,1-18.91,0V9.46a9.46,9.46,0,1,1,18.91,0Z"/><path class="cls-4" d="M56.9,71.08a9.46,9.46,0,1,1-9.46,9.46V71.08Zm0-4.73a9.46,9.46,0,1,1,0-18.91H80.61a9.46,9.46,0,1,1,0,18.91Z"/></g></g></svg>
+        <h3>Slack</h3>
+        <a class="btn" href="https://join.slack.com/t/communitychathq/shared_invite/enQtNzY4MjQ1OTMwNjkyLTg5MGFmYmYwMTUwMTlmZGEzY2EzOTNlZTlmOTA0NDdjMjQyZTBlYWY0YTkzMDg5YmNjYWZkM2NhZmYwZGE0NGY">Join on Slack</a>
+      </div>
+    </div>
+  </div>
+  
+  <iframe width="100%" height="320" src="https://commchat.substack.com/embed" frameborder="0" scrolling="no"></iframe></p>
 
 
-{% for post in paginator.posts %}
+<!--  {% for post in paginator.posts %}
 
 {% assign minutes = post.content | number_of_words | divided_by: 180 %}
 {% if minutes == 0 %}
@@ -41,3 +60,4 @@ home: true
 {% if paginator.previous_page or paginator.next_page %}
   {% include pagination.html %}
 {% endif %}
+-->

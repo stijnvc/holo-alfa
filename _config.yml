@@ -1,27 +1,27 @@
 
 # The name of your website.
-name: Holo Alfa
+name: 💬 Community Chat
 
 description:
 
   # Description of your site. This will show up in google.
-  meta: Holo Alfa is a minimalist, mobile first Jekyll theme with focus on readability and content.
+  meta: Join a private community of community builders and get the personal advice and support you need to advance as a community leader. Skip the guesswork and learn directly from others through exclusive content, resources, Q&A sessions and more!
 
   # Description of your site. This will show up on the front page.
   subtitle: Holo Alfa is a minimalist, mobile first Jekyll theme with focus on readability and content. <a href="https://github.com/stijnvc/holo-alfa">&lt;/&gt; on Github</a>.
 
 author:
-  name: Dr. Jekyll # Change this!
+  name: Mac Reddin # Change this!
 
   # Necessary for contact page
-  email: your@email.com # Change this!
+  email: hello@comm.chat # Change this!
 
   # Optional text (html) to display after author name. Leave empty if you don't
   # want it.
   info:
 
-url: http://steinvc.github.io
-baseurl: "/holo-alfa"
+url: ""
+baseurl: ""
 
 # language attribute in <html> element.
 lang: en
@@ -39,8 +39,6 @@ display-social-icons: false
 # If you want social links to open in a new tab, set this as true
 social-icons-open-newtab: true
 
-footer-text: This is the footer.<br><a href="http://stijnvc.github.io/holo-alfa/">Holo Alfa</a> Jekyll theme crafted by <a href="http://stijnvc.github.io/holo-alfa/">Stijn</a>.
-
 # Preferably 64px in height. Leave empty = disable.
 logo-image: # /img/logo.png
 
@@ -51,7 +49,7 @@ theme-color-attr: "#00f0ff"
 ms-tile-color: "#00f0ff"
 
 # Color used throughout the theme. Format: R, G, B.
-theme-color: 0, 240, 255 # Original: 0, 240, 255
+theme-color: 112, 161, 255 # Original: 0, 240, 255
 
 # Text color used throughout the theme. Format: R, G, B.
 text-color: 0, 0, 0 # Original: 0, 0, 0
