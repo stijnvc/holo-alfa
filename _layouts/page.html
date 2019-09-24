@@ -1,8 +1,32 @@
----
-layout: default
----
-
-<article>
-	<h1>{{ page.title }}</h1>
-		{{ content }}
-</article>
+<!DOCTYPE html>
+<html lang="{{ site.lang }}" prefix="og: http://ogp.me/ns#">
+<head>
+	{% include head.html %}
+</head>
+<body>
+	{% if page.cover-image %}
+	<div class="cover-image-container">
+		<img alt="Cover image" src="{{ site.baseurl }}/img/covers/{{ page.cover-image }}">
+	</div>
+	{% endif %}
+	<div class="wrap">
+		{% include header.html %}
+		<article>
+			<h1>{{ page.title }}</h1>
+				{{ content }}
+		</article>		
+	  <script>
+	    $("article").fitVids();
+	    $('article p').each(function(i){
+				if (($(this).find('img').length) && (!$.trim($(this).text()).length))  {
+					$(this).addClass('img-only');
+				}
+				if ($.trim($(this).text()).length - $.trim($(this).find('small').text()).length == 0 && ($(this).find('img').length)){
+					$(this).addClass('img-only-source');
+				}
+	  	});
+	  </script>
+	</div>
+	{% include footer.html %}
+</body>
+</html>

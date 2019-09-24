@@ -448,6 +448,12 @@ nav a.current {
   color: rgba({{ site.theme-color }});
 }
 
+.display-center {
+  text-align: center;
+  display: inline-block;
+  line-height: 1.5em;
+}
+
 /* Structure overwrites */
 
 @media all and (min-width: 370px) {
