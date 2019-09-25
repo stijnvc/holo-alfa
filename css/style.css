@@ -444,6 +444,11 @@ nav a.current {
   margin: 0;
 }
 
+.sub {
+  font-size: 0.7em;
+  margin: 0;
+}
+
 .main-header {
   color: rgba({{ site.theme-color }});
 }
