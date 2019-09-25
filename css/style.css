@@ -549,3 +549,24 @@ nav a.current {
     margin-bottom: 0;
   }
 }
+
+	
+@media (prefers-color-scheme: dark) {
+     body {
+        background: #1A202C;
+        color: #EDF2F7;
+    }
+    a {
+      color: #EDF2F7;
+    }
+    .website-title {
+      color: #EDF2F7;
+    }
+    .sub-box {
+      background: #EDF2F7;
+    }
+    footer {
+      background: rgb(16, 20, 27);
+      color: #EDF2F7;
+    }
+}

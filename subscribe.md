@@ -9,4 +9,6 @@ Get the lastest interesting thoughts, resources and tips in the community buildi
 </div>
 <p></p>
 
-<iframe width="100%" height="320" src="https://commchat.substack.com/embed" frameborder="0" scrolling="no"></iframe>
+<div class="sub-box">
+    <iframe width="100%" height="320" src="https://commchat.substack.com/embed" frameborder="0" scrolling="no"></iframe>
+  </div>
