@@ -1,27 +1,62 @@
 ---
-layout: default
+layout: page
 ---
 
-{% assign minutes = content | number_of_words | divided_by: 180 %}
+<!--{% assign minutes = content | number_of_words | divided_by: 180 %}
 {% if minutes == 0 %}
   {% assign read-time = site.var_less_than_a_minute_read %}
 {% else %}
   {% assign read-time = minutes | append: "&nbsp;" | append: site.var_min_read %}
-{% endif %}
+{% endif %}-->
 
 <article>
-  <span class="meta">{{ page.date | date: site.date_format }} • {{ read-time }}</span>
-	<h1>{{ page.title }}</h1>
-		{{ content }}
-  {% if site.display-author-post-page %}
-    {% if page.author.name %}
-      <small><em>{{ site.var_guest_post_by }}: {{ page.author.name }} {{ page.author.info }}</em></small>
-    {% else %}
-      {% if site.author.name %}
-        <small><em>{{ site.var_post_by }}: {{ site.author.name }} {{ site.author.info }}</em></small>
+  <!--<span class="meta">{{ page.date | date: site.date_format }} • {{ read-time }}</span>-->
+  <p>{{ page.summary }}</p>
+  {{ content }}
+  <section id="more-work">
+      {% if page.previous %}
+          {% assign previous = page.previous %}
+      {% else %}
+          {% assign previous = site.posts[0] %}
       {% endif %}
-    {% endif %}
-  {% endif %}
+      {% if page.next %}
+          {% assign next = page.next %}
+      {% else %}
+          {%comment%}
+              As the array index start at zero we substract 1 to the total count,
+              we then get the last post index in the site.posts array
+          {%endcomment%}
+          {% assign last lastPostIndex = site.posts | size | minus: 1 %}
+          {% assign next = site.posts[lastPostIndex] %}
+      {% endif %}
+      <hr>
+      <div class="columns">
+        <div class="col-6">
+          <div class="left ama-post">
+            <a class="equalize" href="{{site.baseurl}}{{previous.url}}" title="Previous Post: {{previous.title}}">
+              <div>
+                <p> ← Previous </p>
+                <p> {{previous.title}} </p>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="col-6">
+          <div class="right ama-post">
+            <a class="equalize" href="{{site.baseurl}}{{next.url}}" title="next Post: {{next.title}}">
+              <div>
+                <p> Next →</p>
+                <p> {{next.title}}</p>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+      
+  
+      
+     
+  </section>
 </article>
 
 {% if site.display-next-prev-post and page.previous.url or site.display-next-prev-post and page.next.url %}

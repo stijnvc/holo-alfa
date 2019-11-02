@@ -145,25 +145,6 @@ blockquote {
   padding: 0 20px;
   font-style: italic;
 }
-blockquote::before,
-blockquote::after {
-  font-weight: 400;
-  font-size: 80px;
-  color: rgba({{ site.theme-color }}, .4);
-  display: block;
-  text-align: center;
-  vertical-align: bottom;
-  height: 40px;
-  font-style: normal;
-}
-blockquote::before {
-  content: "“";
-  margin-top: 30px;
-}
-blockquote::after {
-  content: "”";
-  margin-bottom: 30px;
-}
 code {
   font-family: "Source Code Pro", monospace;
 }
@@ -515,11 +496,16 @@ nav a.current {
     margin: 0 -30px;
   }
   blockquote {
-    padding: 0 30px;
-    font-size: 1.3em;
+    padding: 15px;
+    font-size: 1em;
+    background-color: #2c3546; 
+    border-left: 2px solid #70a1ff;
+  }
+  blockquote p {
+    margin: 0;
   }
   hr {
-    margin: 90px auto;
+    margin: 50px auto;
   }
 }
 @media all and (min-width: {{ site.nav-breaking-point }}) {
@@ -575,3 +561,41 @@ nav a.current {
       color: #EDF2F7;
     }
 }
+
+.upcoming-ama {
+  padding: 10px;
+}
+
+.upcoming-ama h6 {
+  margin: 0;
+}
+
+.upcoming-ama p {
+  margin: 0;
+}
+
+.ama-post {
+  padding: 10px;
+  transition: all 0.3s ease;
+}
+
+.ama-post:hover {
+  background: #2c3546;
+}
+
+.ama-post a {
+  text-decoration: none;
+}
+
+.ama-post h6 {
+  margin: 0;
+}
+
+.ama-post p {
+  margin: 0;
+}
+
+.right {
+  text-align: right;
+}
+
