@@ -9,16 +9,14 @@ Each week we host an AMA on our Discord with someone with community experience. 
 </div>
 <br>
 <h6>Upcoming AMAs</h6>
-<p>Stay tuned for upcoming AMA info!</p>
-<!--
 <div class="upcoming-ama">
-  <p><strong>AMA Host Name</strong> - Founder of Community</p>
-  <p><i>November 15th at 7pm EST</i></p>
+  <p><strong>Pornhub Discord Team</strong></p>
+  <p><i>November 7th at 5pm EST</i></p>
 </div>
 <div class="upcoming-ama">
-  <p><strong>AMA Host Name</strong> - Bot developer of Dyno</p>
-  <p><i>November 15th at 7pm EST</i></p>
-</div>-->
+  <p><strong>Aaron#0001</strong> - Founder of LFG</p>
+  <p><i>November 14th at 7pm EST</i></p>
+</div>-
 <p></p>
 <h6>Past AMAs</h6>
 <div class="post-list" itemscope="" itemtype="http://schema.org/Blog">
