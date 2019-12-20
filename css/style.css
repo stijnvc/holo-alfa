@@ -533,6 +533,7 @@ nav a.current {
     padding: 0 0.5%;
   }
 }
+
 @media all and (min-width: 760px) {
   h1 {
     font-size: 2.9em;
