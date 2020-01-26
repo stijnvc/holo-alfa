@@ -206,12 +206,14 @@ hr {
   {% include gradient.css %}
 }
 
+
+
 /* Structure */
 
 .wrap {
   margin: 0 auto;
   padding: 0 15px;
-  max-width: 700px;
+  max-width: 900px;
   min-height: 100%;
   margin-bottom: -141px;
 }
@@ -397,8 +399,8 @@ nav a.current {
 .btn {
   padding: 15px 30px;
   width: 60%;
-  color: black;
-  background: white;
+  color: #fff;
+  background: #3498DB;
   margin: 0;
   box-sizing: border-box;
   display: inline-block;
@@ -408,9 +410,19 @@ nav a.current {
 }
 
 .btn:hover {
-  background: rgba(0, 0, 0 , .2);
+  background: #277fb9;
   color: white;
 }
+
+.btn-slack {
+  background-color: #fff;
+  color: #333333;
+}
+
+.btn-slack:hover {
+  background-color: rgba(255, 255, 255, 0.4);
+}
+
 
 .header-content {
   text-align: center;

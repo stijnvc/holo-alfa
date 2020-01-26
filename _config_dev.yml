@@ -51,7 +51,7 @@ theme-color-attr: "#00f0ff"
 ms-tile-color: "#00f0ff"
 
 # Color used throughout the theme. Format: R, G, B.
-theme-color: 0, 240, 255 # Original: 0, 240, 255
+theme-color: 52, 152, 219 # Original: 0, 240, 255
 
 # Text color used throughout the theme. Format: R, G, B.
 text-color: 0, 0, 0 # Original: 0, 0, 0
