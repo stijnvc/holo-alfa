@@ -306,7 +306,7 @@ footer {
   font-size: 0.8em;
   color: rgba({{ site.text-color }},0.5);
   text-align: center;
-  background-color: rgba({{ site.text-color }}, 0.05);
+  background-color: #ecf0f3;
   border-top: 1px solid rgba({{ site.text-color }}, 0.1);
   height: auto;
   margin-top: 50px;
@@ -377,6 +377,10 @@ nav a.current {
 .col-6 {
   width: 99%;
   padding: 0 0.5%;
+}
+
+.col-4 {
+  width: 100%;
 }
 
 .join-card {
@@ -546,16 +550,6 @@ nav a.current {
   }
 }
 
-@media all and (min-width: 760px) {
-  h1 {
-    font-size: 2.9em;
-  }
-  article:last-of-type::after {
-    content: "";
-    margin-top: 120px;
-    margin-bottom: 0;
-  }
-}
 
 	
 @media (prefers-color-scheme: dark) {
@@ -576,12 +570,28 @@ nav a.current {
       background: rgb(16, 20, 27);
       color: #EDF2F7;
     }
+    .resource-card {
+      background: rgb(16, 20, 27);
+      color: #EDF2F7;
+    }
     .ama-post:hover {
       background: #2c3546;
     }
     blockquote {
       background: #2c3546;
     }
+}
+
+.resource-card {
+  margin: 10px;
+  border-radius: 5px;
+  padding: 20px;
+  border: 2px solid transparent;
+  background: #ecf0f3;
+}
+
+.resource-card:hover {
+  border: 2px solid #3498DB;
 }
 
 .upcoming-ama {
@@ -620,4 +630,101 @@ nav a.current {
 .right {
   text-align: right;
 }
+
+.resource-header {
+  text-align: center;
+}
+
+
+
+.resource-card-list {
+  margin: 20px 10px;
+  border: 2px solid transparent;
+}
+
+.resource-card-list:hover {
+  border: 2px solid #3498DB;
+  cursor: pointer;
+}
+
+
+
+.resource-head {
+  width: 100%;
+}
+
+.resource-img {
+  width: auto;
+  border-radius: 5px 5px 0 0;
+}
+
+.resource-info {
+  padding: 10px;
+}
+
+.resource-info p {
+  margin: 0;
+  font-size: 0.8em;
+}
+
+.resource-info h4 {
+  margin: 0;
+}
+
+.resource-link {
+  text-decoration: none;
+  padding: 10px;
+}
+
+
+@media all and (min-width: 760px) {
+  .resource-card-list {
+    width: 100%;
+    background: #ecf0f3;
+    margin: 10px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 2px solid transparent;
+  }
+  .resource-head {
+    display: flex;
+    align-items: center;
+  }
+
+
+
+  .resource-img {
+    width: 150px;
+    height: 150px;
+    margin: 0;
+    border-radius: 5px 0 0 5px;
+    display: block;
+    object-fit: contain;
+
+  }
+  .resource-link {
+    margin: 0;
+    margin-right: 10px;
+    min-width: 120px;
+  }
+  .resource-info {
+    margin-left: 20px;
+    padding: 0;
+  }
+
+  h1 {
+    font-size: 2.9em;
+  }
+  article:last-of-type::after {
+    content: "";
+    margin-top: 120px;
+    margin-bottom: 0;
+  }
+  .col-4 {
+    width: 33.3333333%;
+  }
+}
+
 
