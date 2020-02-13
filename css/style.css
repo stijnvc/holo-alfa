@@ -550,7 +550,15 @@ nav a.current {
   }
 }
 
+@media (prefers-color-scheme: light) {
+  .resource-card {
+    background-color: #ecf0f3;
+  }
+  .resource-card-list {
+    background-color: #ecf0f3;
+  }
 
+}
 	
 @media (prefers-color-scheme: dark) {
      body {
@@ -574,6 +582,10 @@ nav a.current {
       background: rgb(16, 20, 27);
       color: #EDF2F7;
     }
+    .resource-card-list {
+      background: rgb(16, 20, 27);
+      color: #EDF2F7;
+    }
     .ama-post:hover {
       background: #2c3546;
     }
@@ -587,7 +599,6 @@ nav a.current {
   border-radius: 5px;
   padding: 20px;
   border: 2px solid transparent;
-  background: #ecf0f3;
 }
 
 .resource-card:hover {
@@ -680,7 +691,6 @@ nav a.current {
 @media all and (min-width: 760px) {
   .resource-card-list {
     width: 100%;
-    background: #ecf0f3;
     margin: 10px;
     border-radius: 5px;
     display: flex;
