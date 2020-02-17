@@ -721,7 +721,20 @@ nav a.current {
   }
   .resource-info {
     margin-left: 20px;
-    padding: 0;
+    padding: 20px;
+  }
+
+  .book-title {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  .book-title h4 {
+    margin-right: 10px;
+  }
+
+  .book-title p {
+    opacity: 0.7;
   }
 
   h1 {
