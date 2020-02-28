@@ -1,0 +1,20 @@
+// Shapes
+.s-rounded {
+  border-radius: $border-radius;
+}
+
+.s-circle {
+  border-radius: 50%;
+}
+
+.br {
+  border-radius: $border-radius;
+}
+
+.br-lg {
+  border-radius: $border-radius-lg;
+}
+
+.br-xl {
+  border-radius: 16px;
+}

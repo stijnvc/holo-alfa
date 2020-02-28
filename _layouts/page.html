@@ -1,34 +1,10 @@
-<!DOCTYPE html>
-<html lang="{{ site.lang }}" prefix="og: http://ogp.me/ns#">
-<head>
-	{% include head.html %}
-</head>
-<body>
-	{% if page.cover-image %}
-	<div class="cover-image-container">
-		<img alt="Cover image" src="{{ site.baseurl }}/img/covers/{{ page.cover-image }}">
-	</div>
-	{% endif %}
-	<div class="wrap">
-		{% include header.html %}
-		<article>
-			
-				{{ content }}
-		</article>		
-	  <script>
-	    $("article").fitVids();
-	    $('article p').each(function(i){
-				if (($(this).find('img').length) && (!$.trim($(this).text()).length))  {
-					$(this).addClass('img-only');
-				}
-				if ($.trim($(this).text()).length - $.trim($(this).find('small').text()).length == 0 && ($(this).find('img').length)){
-					$(this).addClass('img-only-source');
-				}
-	  	});
-	  </script>
-	</div>
-	{% include footer.html %}
-	<script async defer src="https://cdn.simpleanalytics.io/hello.js"></script>
-	<noscript><img src="https://api.simpleanalytics.io/hello.gif" alt=""></noscript>
-</body>
-</html>
+---
+layout: default
+---
+
+<article>
+
+	{{ content }}
+
+
+</article>

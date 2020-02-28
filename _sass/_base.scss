@@ -1,0 +1,39 @@
+// Base
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: $html-font-size;
+  line-height: $html-line-height;
+  -webkit-tap-highgray-color-light: transparent;
+}
+
+body {
+  background: $gray-color-light;
+  color: $body-font-color;
+  font-family: $body-font-family;
+  font-size: $font-size;
+  text-rendering: optimizeLegibility;
+  width: 100%;
+}
+
+a {
+  color: $link-color;
+  outline: none;
+  text-decoration: none;
+
+  &:focus {
+    @include control-shadow();
+  }
+
+  &:hover,
+  &:active,
+  &.active {
+    color: $link-color-dark;
+    text-decoration: none;
+  }
+}

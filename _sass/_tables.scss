@@ -1,0 +1,166 @@
+// Tables
+.table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+  @if $rtl == true {
+    text-align: right;
+  } @else {
+    text-align: left;
+  }
+
+  tbody {
+    tr {
+      border-bottom: 1px solid $gray-color-light;
+      transition: all ease 0.3s;
+    }
+  }
+  thead {
+    tr {
+      border-bottom: 1px solid $gray-color;
+    }
+  }
+
+  &.table-striped {
+    tbody {
+      tr:nth-of-type(odd) {
+        background: $gray-color-light;
+      }
+    }
+  }
+
+  &.table-sticky {
+    position: relative;
+    th {
+      position: sticky;
+      top: 0;
+      background-color: $white;
+      opacity: 1;
+      z-index: 10;
+    }
+  }
+
+  &.table-action {
+    th:last-child, td:last-child {
+      width: 70px;
+    }
+    th:nth-child(2), td:nth-child(2) {
+      width: 200px;
+    }
+    th:nth-child(3), td:nth-child(3) {
+      width: 200px;
+    }
+    th:nth-child(4), td:nth-child(4) {
+      width: 200px;
+    }
+    th:nth-child(5), td:nth-child(5) {
+      width: 200px;
+    }
+  }
+
+  &,
+  &.table-striped {
+    tbody {
+      tr {
+        &.active {
+          background: $gray-color-light;
+        }
+      }
+    }
+  }
+
+  &.table-hover {
+    tbody {
+      tr {
+        &:hover {
+          background: $gray-color-light;
+          border-bottom: 1px solid $gray-color;
+        }
+      }
+    }
+  }
+
+  // Scollable tables
+
+  td,
+  th {
+    padding: $unit-3 $unit-2;
+  }
+  th {
+    border-bottom-width: $border-width-lg;
+    font-weight: 500;
+    text-transform: uppercase;
+  }
+}
+
+.table-scroll {
+  display: block;
+  overflow-x: auto;
+  white-space: nowrap;
+  padding-bottom: .75rem;
+  border-radius: 5px;
+  p {
+    margin: 0;
+  }
+  th, td {
+    min-width: 180px;
+    max-width: 300px;
+    overflow: hidden;
+  }
+  thead {
+    border-bottom: $base-500 1px solid;
+    background: $base-300;
+  }
+  th {
+    background-color: $base-300;
+    padding: 20px;
+    color: $base-600;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    border-right: 1px solid $base-400;
+    &.active {
+      background-color: $base-400;
+    }
+    &:first-of-type {
+      min-width: 350px;
+    }
+  }
+  tr {
+    .btn-preview {
+      display: none;
+    }
+    &:hover .btn-preview {
+      display: block;
+    }
+  }
+  td {
+    padding: 10px 20px;
+    &:first-child {
+      border-right: 1px solid $base-300;
+      overflow: visible;
+      img {
+        width: 42px;
+      }
+    }
+    &:last-child {
+      width: 100%;
+    }
+  }
+}
+
+.table-compact {
+  th {
+    padding: 10px;
+  }
+  td {
+    padding: 2px 10px;
+    &:first-child {
+      img {
+        width: 24px;
+      }
+    }
+    .double-data {
+      display: none;
+    }
+  }
+} 

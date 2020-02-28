@@ -1,0 +1,36 @@
+.app-header.header-bg {
+  background: $primary-color;
+
+  .header {
+    background-image: linear-gradient(to bottom,$primary-color-dark,$primary-color);
+    background-color: $primary-color;
+  
+    padding: 60px 0 100px;  
+    h1, h2, h6 {
+          margin: 0;
+          color: $white;
+    }
+    h6 {
+          color: $gray-color-light;
+          margin: 20px 0;
+    }
+    a {
+          color: $secondary-color;
+    }
+  } 
+}
+
+.comm-image-placeholder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 64px;
+  width: 64px;
+  border-radius: 32px;
+  background: $gray-color-light;
+  border: 1px solid $secondary-color;  
+  i {
+    font-size: 24px;
+    color: $secondary-color;
+  }   
+}

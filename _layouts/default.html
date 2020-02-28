@@ -1,35 +1,27 @@
+---
+layout: compress
+published: true
+---
+
 <!DOCTYPE html>
-<html lang="{{ site.lang }}" prefix="og: http://ogp.me/ns#">
-<head>
-	{% include head.html %}
-</head>
-<body>
-	{% if page.cover-image %}
-	<div class="cover-image-container">
-		<img alt="Cover image" src="{{ site.baseurl }}/img/covers/{{ page.cover-image }}">
-	</div>
-	{% endif %}
-	<div class="wrap">
+<html lang="en" data-theme="light">
+
+	<head>
+		{% include head.html %}
+	</head>
+
+	<body class="bg-white">
+		<div class="container grid-xl">
 		{% include header.html %}
-		<div class="header-content">
-      <h2 class="main-header">The community for community builders</h2>
-      <p>Join a private community of community builders and get the personal advice and support you need to advance as a community leader. Skip the guesswork and learn directly from others through exclusive content, resources, Q&A sessions and more!<p>
-  	</div>
-		{{ content }}
-	  <script>
-	    $("article").fitVids();
-	    $('article p').each(function(i){
-				if (($(this).find('img').length) && (!$.trim($(this).text()).length))  {
-					$(this).addClass('img-only');
-				}
-				if ($.trim($(this).text()).length - $.trim($(this).find('small').text()).length == 0 && ($(this).find('img').length)){
-					$(this).addClass('img-only-source');
-				}
-	  	});
-	  </script>
-	</div>
-	{% include footer.html %}
-	<script async defer src="https://cdn.simpleanalytics.io/hello.js"></script>
-	<noscript><img src="https://api.simpleanalytics.io/hello.gif" alt=""></noscript>
-</body>
+			<div id="content">
+	
+				{{ content }}
+			</div>
+			{% include footer.html %}
+		</div>
+
+		<script async defer src="https://cdn.simpleanalytics.io/hello.js"></script>
+		<noscript><img src="https://api.simpleanalytics.io/hello.gif" alt=""></noscript> 
+	</body>
+
 </html>

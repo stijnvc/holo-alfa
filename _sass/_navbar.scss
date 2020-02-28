@@ -1,0 +1,143 @@
+
+.navbar {
+  padding: 15px 10px;
+  &.dash-nav {
+    padding: 12px 0;
+    .nav-links {
+      color: $dark-color;
+    }
+    .navbar-toggle {
+      top: 4px;
+    }
+  }
+}
+
+.navbar-logo {
+  text-align: center;
+}
+
+
+.nav-full {
+  background: $primary-color-dark;
+}
+
+.main-nav {
+  list-style-type: none;
+}
+
+.nav-links {
+  text-decoration: none;
+  font-weight: 700;
+  color: $dark-color;
+  margin: 0 3px;
+  &:hover {
+    color: $primary-color;
+  }
+}
+
+.main-nav li {
+  text-align: center;
+  margin: 15px auto;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  border: 0;
+  h4 {
+        margin: 0;
+        margin-left: 14px;
+        color: $white;
+        font-weight: 700;
+  }
+  &:hover {
+        border: 0;
+  }
+  p {
+        font-size: 10px;
+        background: $gray-color;
+        padding: 2px 8px;
+        border-radius: 5px;
+        margin-left: 5px;
+  }
+}
+
+.navbar-toggle {
+  position: absolute;
+  top: 14px;
+  right: 20px;
+  cursor: pointer;
+  color: $white;
+  font-size: 24px;
+}
+
+.active {
+  display: block;
+}
+
+@media screen and (min-width: 768px) {
+  .navbar {
+    padding: 20px 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    & .dash-nav {
+      padding: 20px 0;
+    }
+    .navbar-toggle {
+          display: none;
+    }
+    .logo {
+          margin-top: 0;
+    }
+    .main-nav {
+      display: flex;
+      margin-right: 30px;
+      flex-direction: row;
+      align-items: center;
+      margin: 0;
+      li {
+        margin: 0;
+        &.nav-divider {
+          width: 2px;
+          background: $white;
+          height: 20px;
+          &.divider-dark {
+            background: $dark-color;
+          }
+        }
+        & .nav-links {
+          padding: 12px 0 12px;
+          margin: 0 10px;
+          border-bottom: 4px solid transparent;
+          box-sizing: border-box;
+        }
+        & .nav-links.active {
+          padding: 12px 0 8px;
+          border-bottom: 4px solid $highlight-color;
+          text-decoration: none;
+        }
+      }
+      &.nav-dash {
+        .nav-links {
+          border-bottom: none;
+          padding: 8px 10px;
+          border-radius: 3px;
+          transition: all ease 0.2s;
+          display: block;
+          &:hover {
+            background-color: $base-900;
+            color: $white;
+          }
+          &.active {
+            border-bottom: none;
+            padding: 8px 10px;
+            border-radius: 3px;
+            background-color: $base-800;
+          }
+        }
+      }
+    }
+
+  }  
+}

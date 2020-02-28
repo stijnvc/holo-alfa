@@ -1,0 +1,42 @@
+// Navs
+.nav {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  margin: $unit-1 0;
+  padding: 0;
+  .nav-item {
+    padding: $unit-4 $unit-6;
+    font-weight: 600;
+    border-radius: $border-radius;
+    transition: 0.4s;
+    margin: 0;
+    a {
+      color: $gray-color-dark;
+      text-decoration: none;
+      border-bottom: none;
+      &:hover {
+        color: $primary-color;
+        text-decoration: none;
+        border-bottom: none;
+      }
+    }
+    &.active {
+      background: $white;
+      box-shadow: $light-shadow;
+      & > a {
+        color: $highlight-color;
+        font-weight: bold;
+        &:focus,
+        &:hover {
+          color: $primary-color;
+        }
+      }
+    }
+  }
+
+  & .nav {
+    margin-bottom: $unit-2;
+    margin-left: $unit-4;
+  }
+}

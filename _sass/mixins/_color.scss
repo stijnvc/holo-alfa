@@ -1,0 +1,39 @@
+// Background color utility mixin
+@mixin bg-color-variant($name: ".bg-primary", $color: $primary-color) {
+  #{$name} {
+    background: $color;
+
+    @if (lightness($color) < 60) {
+      color: $white;
+    }
+  }
+}
+
+// Text color utility mixin
+@mixin text-color-variant($name: ".text-primary", $color: $primary-color) {
+  #{$name} {
+    color: $color;
+  }
+
+  a#{$name} {
+    &:focus,
+    &:hover {
+      color: darken($color, 5%);
+    }
+  }
+}
+
+// Border color utility mixin
+@mixin border-color-variant($name: ".border-primary", $color: $primary-color) {
+  #{$name} {
+    border: 1px solid $color;
+  }
+}
+
+// Border bottom utility mixin
+@mixin borderb-color-variant($name: ".borderb-primary", $color: $primary-color) {
+  #{$name} {
+    border-bottom: 1px solid $color;
+  }
+}
+

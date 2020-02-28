@@ -1,11 +1,27 @@
-<header>
-  <a href="{{ site.baseurl }}/" class="website-title">
-    {% if site.logo-image %}
-      <img alt="{{ site.name }}" src="{{ site.baseurl }}{{ site.logo-image }}">
-    {% else %}
-      {{ site.name }}
-    {% endif %}
+<header class="navbar">
+  <section class="navbar-section">
+    <div class="">
+      <a href="/" class="flex-centered text-dark navbar-logo">
+        <svg height="48" viewbox="0 0 290 270" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><path id="a" d="M-.0045.00475H239.99V240H-.0045z"/><path id="c" d="M0 .005h239.99525v239.994939H0z"/></defs><g fill="none" fill-rule="evenodd"><g transform="translate(50 29.995)"><mask id="b" fill="#fff"><use xlink:href="#a"/></mask><path d="M219.226 187.505c31.849-46.709 27.062-110.913-14.378-152.353-46.863-46.863-122.843-46.863-169.706 0-46.862 46.863-46.862 122.843 0 169.706 41.44 41.44 105.644 46.227 152.354 14.377l40.236 14.934c4.01 1.488 7.915-2.418 6.428-6.427l-14.934-40.237z" fill="#9AD0E8" mask="url(#b)"/></g><g transform="translate(0 -.005)"><mask id="d" fill="#fff"><use xlink:href="#c"/></mask><path d="M204.848 35.1519c-46.863-46.863-122.843-46.863-169.706 0-41.44 41.44-46.227 105.644-14.378 152.353L5.83 227.7419c-1.487 4.009 2.418 7.915 6.428 6.427l40.236-14.934c46.71 31.85 110.915 27.063 152.354-14.377 46.863-46.863 46.863-122.843 0-169.706" fill="#3498DB" mask="url(#d)"/></g><path d="M135.9955 120c0 8.836-7.164 16-16 16-8.837 0-16-7.164-16-16M83.9955 120c0 8.836-7.164 16-16 16-8.837 0-16-7.164-16-16s7.163-16 16-16c8.836 0 16 7.164 16 16M187.9955 120c0 8.836-7.164 16-16 16-8.837 0-16-7.164-16-16s7.163-16 16-16c8.836 0 16 7.164 16 16" fill="#FFF"/></g></svg>
+        <h3 class="m-0 ml-2">Community Chat</h3>
+      </a>
+    </div>
 
-  </a>
-  {% include navigation.html %}
+  </section>
+  <section class="navbar-section">
+    <ul class="main-nav" id="js-menu">
+      <li class="menu-item">
+        <a href="/newsletter" class="nav-links">Newsletter</a>
+      </li>
+      <li class="menu-item">
+        <a href="/jobs" class="nav-links">Job Board</a>
+      </li>
+      <li class="menu-item">
+        <a href="/resources" class="nav-links">Resources</a>
+      </li>
+      <li class="menu-item">
+        <a href="https://commchat.commsor.com/" target="_blank" class="btn btn-primary">Join Community</a>
+      </li>
+    </ul>
+  </section>
 </header>

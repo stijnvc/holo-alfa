@@ -1,78 +1,24 @@
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width">
-<title>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+
 {% if page.title %}
-{{ page.title }} • {{ site.name }}
+	<title>{{ page.title }} · {{ site.title }}</title>
 {% else %}
-{{ site.name }}
+	<title>{{ site.title }}</title>
 {% endif %}
-</title>
-<meta name="description" content="{{ page.summary }} {{ site.description.meta }}">
-<link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="{{ site.baseurl }}/feed.xml">
 
-<!-- icons -->
-<link rel="apple-touch-icon" href="{{ site.baseurl }}/apple-touch-icon.png">
-<link rel="icon" type="image/png" href="{{ site.baseurl }}/favicon-96x96.png" sizes="96x96">
-<link rel="icon" type="image/png" href="{{ site.baseurl }}/favicon-32x32.png" sizes="32x32">
-<link rel="icon" type="image/png" href="{{ site.baseurl }}/android-chrome-192x192.png" sizes="192x192">
-<meta name="theme-color" content="{{ site.theme-color-attr }}">
-<meta name="msapplication-TileColor" content="{{ site.ms-tile-color }}">
-<meta name="msapplication-TileImage" content="{{ site.baseurl }}/mstile-310x310.png">
-<!-- /icons -->
+<meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
 
-<!-- og tags -->
-<meta property="og:site_name" content="{{ site.name }}">
-<meta property="og:title" content="{% if page.title %}{{ page.title }} • {{ site.name }}{% else %}{{ site.name }}{% endif %}">
-<meta property="og:locale" content="{{ site.lang }}">
-{% if page.og-image %}
-  <meta property="og:image" content="{{ site.url }}{{ site.baseurl }}/img/{{ page.og-image }}">
-{% else %}
-  {% if page.cover-image %}
-    <meta property="og:image" content="{{ site.url }}{{ site.baseurl }}/img/{{ page.cover-image }}">
-  {% else %}
-    <meta property="og:image" content="{{ site.url }}{{ site.baseurl }}/img/og-image.jpg">
-  {% endif %}
-{% endif %}
-<meta property="og:type" content="website">
-<meta property="og:url" content="{{ site.url }}{{ site.baseurl }}{{ page.url }}">
-<meta property="og:description" content="
-{% if page.summary %}
-{{ page.summary }}
-{% else %}
-{{ site.description.meta }}
-{% endif %}">
-<!-- /og tags -->
+<script src="https://kit.fontawesome.com/09d99c41d9.js" crossorigin="anonymous"></script>
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-<script src="{{ site.baseurl }}/js/modernizr.js"></script>
-<script src="{{ site.baseurl }}/js/fitvids.js"></script>
-<link href='//fonts.googleapis.com/css?family=Source+Code+Pro:400,700|Source+Sans+Pro:600,900|Crimson+Text:700italic,600,600italic,400,700,400italic' rel='stylesheet' type='text/css'>
-<link rel="stylesheet" href="{{ site.baseurl }}/css/reset.css">
-<link rel="stylesheet" href="{{ site.baseurl }}/css/pygments.css">
-{% if site.display-social-icons %}
-<link rel="stylesheet" href="{{ site.baseurl }}/css/font-awesome.css">
-{% endif %}
-<link rel="stylesheet" href="{{ site.baseurl }}/css/style.css">
-<!--[if gte IE 9]>
-  <style type="text/css">
-    .gradient {
-       filter: none;
-    }
-  </style>
-<![endif]-->
+<link rel="icon" href="{{ "/assets/favicon-32x32.png" | prepend: site.baseurl | prepend: site.url }}">
+<link rel="apple-touch-icon" href="{{ "/assets/apple-touch-icon.png" | prepend: site.baseurl | prepend: site.url }}">
+<link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}" />
+<link rel="canonical" href="{{ page.url | prepend: site.baseurl | prepend: site.url }}">
+<link rel="alternate" type="application/atom+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}" />
 
-{% if page.home != true or site.show-subtitle == false and site.display-social-icons == false %}
-<style>
-header {
-  margin-bottom: 40px;
-}
-@media all and (min-width: 500px) {
-  header {
-    margin-bottom: 100px;
-  }
-}
-header::after {
-  display: none;
-}
-</style>
+
+{% if site.mathjax %}
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 {% endif %}

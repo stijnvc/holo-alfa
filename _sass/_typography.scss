@@ -1,0 +1,204 @@
+// Typography
+// Headings
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: inherit;
+  font-weight: 700;
+  line-height: 1.3;
+  margin-bottom: .5em;
+  margin-top: 0;
+}
+
+h1, h2 {
+  font-family: $header-font-family;
+}
+
+.super-h1 {
+  font-size: 3rem;
+  font-weight: 600;
+}
+
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+  font-weight: 500;
+  letter-spacing: .02em;
+}
+h1,
+.h1 {
+  font-size: 2rem;
+}
+h2,
+.h2 {
+  font-size: 1.6rem;
+}
+h3,
+.h3 {
+  font-size: 1.4rem;
+}
+h4,
+.h4 {
+  font-size: 1.2rem;
+}
+h5,
+.h5 {
+  font-size: 1rem;
+}
+h6,
+.h6 {
+  font-size: .8rem;
+}
+
+// Paragraphs
+p {
+  margin: 0 0 $line-height;
+  font-weight: 400;
+  opacity: 0.8;
+}
+
+a {
+  transition: all ease 0.2s;
+  font-weight: 600;
+  &:hover {
+    color: $highlight-color;
+    text-decoration: none;
+    cursor: pointer;
+  }
+}
+
+// Semantic text elements
+a,
+ins,
+u {
+  text-decoration-skip: ink edges;
+}
+
+abbr[title] {
+  border-bottom: $border-width dotted;
+  cursor: help;
+  text-decoration: none;
+}
+
+kbd {
+  @include label-base();
+  @include label-variant($gray-color-light, $dark-color);
+  font-size: $font-size-sm;
+}
+
+mark {
+  @include label-variant($body-font-color, $highgray-color-light);
+  border-bottom: $unit-o solid darken($highgray-color-light, 15%);
+  border-radius: $border-radius;
+  padding: $unit-o $unit-h 0;
+}
+
+// Blockquote
+blockquote {
+  border-left: $border-width-lg solid $border-color;
+  margin-left: 0;
+  padding: $unit-2 $unit-4;
+
+  p:last-child {
+    margin-bottom: 0;
+  }
+}
+
+// Lists
+ul,
+ol {
+  margin: $unit-4 0 $unit-4 $unit-4;
+  padding: 0;
+
+  ul,
+  ol {
+    margin: $unit-4 0 $unit-4 $unit-4;
+  }
+
+  li {
+    margin-top: $unit-2;
+  }
+}
+
+ul {
+  list-style: disc inside;
+
+  ul {
+    list-style-type: circle;
+  }
+  & .ul-none {
+    list-style: none;
+  }
+  & .fa-ul {
+    list-style: none;
+    margin-left: 25px;
+    margin-bottom: 0;
+    padding: 0;
+    .fa-li {
+      box-sizing: border-box;
+      left: -2em;
+      position: absolute;
+      text-align: center;
+      width: 2em;
+    }
+  }
+}
+
+
+ol {
+  list-style: decimal inside;
+
+  ol {
+    list-style-type: lower-alpha;
+  }
+}
+
+dl {
+  dt {
+    font-weight: bold;
+  }
+  dd {
+    margin: $unit-2 0 $unit-4 0;
+  }
+}
+
+.link-underline {
+  position: relative;
+  
+  &:after {
+    content: '';
+    position: absolute;
+    bottom: -.4em;
+    left: 50%;
+    right: 50%;
+    height: 1px;
+    background: currentColor; // system color
+    transition: all ease .3s;
+  } 
+  
+  &:hover:after {
+    left: 0;
+    right: 0;
+    height: 2px;
+  } 
+  
+  &:before {
+    position: absolute;
+    transform: translateX(-100%);
+    left: -10px;
+    color: #eee;
+    opacity: .3;
+    font-weight: 100;
+    font-size: .8em;
+  }
+}
+
+.muli {
+  font-family: "Muli", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto;
+}

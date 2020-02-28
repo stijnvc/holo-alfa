@@ -1,0 +1,13 @@
+// Text Ellipsis
+@mixin text-ellipsis() {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+
+@mixin hint-color-variant($name: ".hint", $color: $base-600) {
+  #{$name} {
+    color: $color;
+  }
+}

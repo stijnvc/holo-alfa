@@ -1,0 +1,47 @@
+.live-ebook-landing__join-row {
+      position: relative;
+      padding-top: 205px;
+      padding-bottom: 250px;
+}
+
+.live-ebook-landing__width-mask {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      overflow: hidden;
+      background-color: transparent;
+}
+
+.live-ebook-landing__bubble-wrapper {
+      left: 50%;
+      position: absolute;
+      display: inline-block;
+      height: 0;
+      width: 0;
+  }
+
+
+.live-ebook-landing__join-bubble-purple {
+      top: 252px;
+      left: -41vw;
+      position: absolute;
+}
+
+.live-ebook-landing__join-bubble-orange {
+      top: 174px;
+      left: 35vw;
+      position: absolute;
+}
+
+.live-ebook-landing__join-bubble-yellow {
+      top: 293px;
+      left: 22vw;
+      position: absolute;
+}
+
+.live-ebook-landing__join-bubble-green {
+      top: 93px;
+      left: -27vw;
+      position: absolute;
+}

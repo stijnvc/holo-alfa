@@ -1,0 +1,104 @@
+// Text colors
+@include text-color-variant(".text-primary", $primary-color);
+
+@include text-color-variant(".text-secondary", $secondary-color);
+
+@include text-color-variant(".text-gray", $gray-color);
+
+@include text-color-variant(".text-graydark", $gray-color-dark);
+
+@include text-color-variant(".text-light", $white);
+
+@include text-color-variant(".text-dark", $body-font-color);
+
+@include text-color-variant(".text-success", $success);
+
+@include text-color-variant(".text-warning", $warning);
+
+@include text-color-variant(".text-error", $highlight-color);
+
+// Background colors
+@include bg-color-variant(".bg-primary", $primary-color);
+
+@include bg-color-variant(".bg-primary-dark", $primary-color-dark);
+
+@include bg-color-variant(".bg-primary-light", $primary-color-light);
+
+@include bg-color-variant(".bg-white", $white);
+
+@include bg-color-variant(".bg-secondary", $secondary-color);
+
+@include bg-color-variant(".bg-dark", $dark-color);
+
+@include bg-color-variant(".bg-gray", $base-300);
+
+@include bg-color-variant(".bg-gray-dark", $gray-color);
+
+@include bg-color-variant(".bg-success", $success);
+
+@include bg-color-variant(".bg-warning", $warning);
+
+@include bg-color-variant(".bg-error", $highlight-color);
+
+@include bg-color-variant(".bg-base-900", $base-900);
+
+@include bg-color-variant(".bg-base-1100", $base-1100);
+
+
+// Border colors
+@include border-color-variant(".border-primary", $primary-color);
+
+@include border-color-variant(".border-gray", $gray-color-light);
+
+@include border-color-variant(".border-graydark", $gray-color);
+
+
+.drop-shadow {
+      box-shadow: $main-shadow;
+}
+
+@include borderb-color-variant(".borderb-primary", $primary-color);
+
+@include borderb-color-variant(".borderb-gray", $border-color);
+
+@include borderb-color-variant(".borderb-600", $base-600);
+
+
+
+.border-l-primary {
+      border-left: 4px solid $primary-color;
+}
+
+.border-l-success {
+      border-left: 4px solid $success;
+}
+
+.hover-gray {
+      transition: all ease 0.3s;
+      .fad {
+            transition: all ease 0.3s;
+      }
+      &:hover {
+            background-color: $gray-color;
+            .fad {
+                  color: $highlight-color;
+            }
+      }
+}
+
+.hover-secondary {
+      transition: all ease 0.3s;
+      .fad {
+            transition: all ease 0.3s;
+      }
+      &:hover {
+            background-color: $secondary-color;
+            .fad {
+                  color: $highlight-color;
+            }
+      }
+}
+
+.border-r-gray {
+      border-right: 3px solid $gray-color-light;
+}
