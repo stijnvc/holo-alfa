@@ -1,0 +1,89 @@
+// Tabs
+.tab {
+  align-items: center;
+  border-bottom: 1px solid $gray-color;
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  margin: 0;
+
+  &.tab-dark {
+    border-bottom: 1px solid $base-900;
+    .tab-item {
+      a {
+        border-bottom: 3px solid transparent;
+        color: $base-500;
+        &:focus,
+        &:hover {
+          color: $white;
+          border-bottom-color: $base-500;
+        }
+      }
+      &.active a,
+      a.active {
+        border-bottom-color: $highlight-color;
+        color: $white;
+        font-weight: 700;
+      }
+    }
+  }
+
+  .tab-item {
+    margin-top: 0;
+
+    a {
+      border-bottom: 3px solid transparent;
+      color: inherit;
+      display: block;
+      margin: 0 $unit-2 0 0;
+      font-weight: 600;
+      padding: $unit-2;
+      text-decoration: none;
+      &:focus,
+      &:hover {
+        color: $link-color;
+      }
+    }
+    &.active a,
+    a.active {
+      border-bottom-color: $primary-color;
+      color: $link-color;
+      font-weight: 700;
+    }
+
+    &.tab-action {
+      flex: 1 0 auto;
+      text-align: right;
+    }
+
+    .btn-clear {
+      margin-top: -$unit-1;
+    }
+  }
+
+  &.tab-block {
+    .tab-item {
+      flex: 1 0 0;
+      text-align: center;
+
+      a {
+        margin: 0;
+      }
+
+      .badge {
+        &[data-badge]::after {
+          position: absolute;
+          right: $unit-h;
+          top: $unit-h;
+          transform: translate(0, 0);
+        }
+      }
+    }
+  }
+
+  &:not(.tab-block) {
+    .badge {
+      padding-right: 0;
+    }
+  }
+}

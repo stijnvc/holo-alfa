@@ -1,95 +1,34 @@
 ---
-layout: page
+layout: default
 ---
 
-<!--{% assign minutes = content | number_of_words | divided_by: 180 %}
-{% if minutes == 0 %}
-  {% assign read-time = site.var_less_than_a_minute_read %}
-{% else %}
-  {% assign read-time = minutes | append: "&nbsp;" | append: site.var_min_read %}
-{% endif %}-->
-
 <article>
-  <!--<span class="meta">{{ page.date | date: site.date_format }} • {{ read-time }}</span>-->
-  <p>{{ page.summary }}</p>
-  {{ content }}
-  <section id="more-work">
-      {% if page.previous %}
-          {% assign previous = page.previous %}
-      {% else %}
-          {% assign previous = site.posts[0] %}
-      {% endif %}
-      {% if page.next %}
-          {% assign next = page.next %}
-      {% else %}
-          {%comment%}
-              As the array index start at zero we substract 1 to the total count,
-              we then get the last post index in the site.posts array
-          {%endcomment%}
-          {% assign last lastPostIndex = site.posts | size | minus: 1 %}
-          {% assign next = site.posts[lastPostIndex] %}
-      {% endif %}
-      <hr>
-      <div class="columns">
-        <div class="col-6">
-          <div class="left ama-post">
-            <a class="equalize" href="{{site.baseurl}}{{previous.url}}" title="Previous Post: {{previous.title}}">
-              <div>
-                <p> ← Previous </p>
-                <p> {{previous.title}} </p>
-              </div>
-            </a>
-          </div>
-        </div>
-        <div class="col-6">
-          <div class="right ama-post">
-            <a class="equalize" href="{{site.baseurl}}{{next.url}}" title="next Post: {{next.title}}">
-              <div>
-                <p> Next →</p>
-                <p> {{next.title}}</p>
-              </div>
-            </a>
-          </div>
-        </div>
-      </div>
-      
-  
-      
-     
-  </section>
+	<a class="hover-link" href="/posts">← All Posts</a>
+		<h1 class=" text-bold">{{ page.title }}</h1>
+		<time>{{ page.date | date: '%B %-d, %Y' }}</time>
+		{% include reading-time.html %}
+
+
+	<div class="divider"></div>
+	{{ content }}
+
 </article>
+<section>
+		<div class="row">
+			<script src="https://f.convertkit.com/ckjs/ck.5.js"></script>
+      <form action="https://app.convertkit.com/forms/1224755/subscriptions" style="background-color: rgb(208, 212, 245); border-radius: 0px;" class="seva-form formkit-form" method="post" data-sv-form="1224755" data-uid="65d7d8a0be" data-format="inline" data-version="5" data-options="{&quot;settings&quot;:{&quot;after_subscribe&quot;:{&quot;action&quot;:&quot;message&quot;,&quot;success_message&quot;:&quot;Success! Now check your email to confirm your subscription.&quot;,&quot;redirect_url&quot;:&quot;&quot;},&quot;analytics&quot;:{&quot;google&quot;:null,&quot;facebook&quot;:null,&quot;segment&quot;:null,&quot;pinterest&quot;:null},&quot;modal&quot;:{&quot;trigger&quot;:&quot;timer&quot;,&quot;scroll_percentage&quot;:null,&quot;timer&quot;:5,&quot;devices&quot;:&quot;all&quot;,&quot;show_once_every&quot;:15},&quot;powered_by&quot;:{&quot;show&quot;:false,&quot;url&quot;:&quot;https://convertkit.com?utm_source=dynamic&amp;utm_medium=referral&amp;utm_campaign=poweredby&amp;utm_content=form&quot;},&quot;recaptcha&quot;:{&quot;enabled&quot;:false},&quot;return_visitor&quot;:{&quot;action&quot;:&quot;show&quot;,&quot;custom_content&quot;:&quot;&quot;},&quot;slide_in&quot;:{&quot;display_in&quot;:&quot;bottom_right&quot;,&quot;trigger&quot;:&quot;timer&quot;,&quot;scroll_percentage&quot;:null,&quot;timer&quot;:5,&quot;devices&quot;:&quot;all&quot;,&quot;show_once_every&quot;:15},&quot;sticky_bar&quot;:{&quot;display_in&quot;:&quot;top&quot;,&quot;trigger&quot;:&quot;timer&quot;,&quot;scroll_percentage&quot;:null,&quot;timer&quot;:5,&quot;devices&quot;:&quot;all&quot;,&quot;show_once_every&quot;:15}},&quot;version&quot;:&quot;5&quot;}" min-width="400 500 600 700 800"><div style="opacity: 0.2;" class="formkit-background"></div><div data-style="minimal"><div class="formkit-header" style="color: rgb(77, 77, 77); font-size: 27px; font-weight: 700;" data-element="header"><h1>Join the Newsletter</h1></div><div class="formkit-subheader" style="color: rgb(104, 104, 104); font-size: 18px;" data-element="subheader"><p><span style="color:#171c28"><strong>Get my newsletter about startup stories</strong></span><em><span style="color:#171c28"><strong>,</strong></span></em><span style="color:#171c28"><strong> lessons &amp; more</strong></span></p></div><ul class="formkit-alert formkit-alert-error" data-element="errors" data-group="alert"></ul><div data-element="fields" data-stacked="false" class="seva-fields formkit-fields"><div class="formkit-field"><input class="formkit-input" name="email_address" style="color: rgb(0, 0, 0); border-color: rgb(227, 227, 227); border-radius: 4px; font-weight: 400;" placeholder="Your email address" required="" type="email"></div><button data-element="submit" class="formkit-submit formkit-submit" style="color: rgb(255, 255, 255); background-color: rgb(109, 124, 237); border-radius: 0px; font-weight: 700;"><div class="formkit-spinner"><div></div><div></div><div></div></div><span>Subscribe</span></button></div><div class="formkit-guarantee" style="color: rgb(77, 77, 77); font-size: 13px; font-weight: 400;" data-element="guarantee"><p>Once per week. No spam. Unsubscribe at any time.</p></div></div><style>.formkit-form[data-uid="65d7d8a0be"] *{box-sizing:border-box;}.formkit-form[data-uid="65d7d8a0be"]{-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;}.formkit-form[data-uid="65d7d8a0be"] legend{border:none;font-size:inherit;margin-bottom:10px;padding:0;position:relative;display:table;}.formkit-form[data-uid="65d7d8a0be"] fieldset{border:0;padding:0.01em 0 0 0;margin:0;min-width:0;}.formkit-form[data-uid="65d7d8a0be"] body:not(:-moz-handler-blocked) fieldset{display:table-cell;}.formkit-form[data-uid="65d7d8a0be"] h1,.formkit-form[data-uid="65d7d8a0be"] h2,.formkit-form[data-uid="65d7d8a0be"] h3,.formkit-form[data-uid="65d7d8a0be"] h4,.formkit-form[data-uid="65d7d8a0be"] h5,.formkit-form[data-uid="65d7d8a0be"] h6{color:inherit;font-size:inherit;font-weight:inherit;}.formkit-form[data-uid="65d7d8a0be"] p{color:inherit;font-size:inherit;font-weight:inherit;}.formkit-form[data-uid="65d7d8a0be"] ol:not([template-default]),.formkit-form[data-uid="65d7d8a0be"] ul:not([template-default]),.formkit-form[data-uid="65d7d8a0be"] blockquote:not([template-default]){text-align:left;}.formkit-form[data-uid="65d7d8a0be"] p:not([template-default]),.formkit-form[data-uid="65d7d8a0be"] hr:not([template-default]),.formkit-form[data-uid="65d7d8a0be"] blockquote:not([template-default]),.formkit-form[data-uid="65d7d8a0be"] ol:not([template-default]),.formkit-form[data-uid="65d7d8a0be"] ul:not([template-default]){color:inherit;font-style:initial;}.formkit-form[data-uid="65d7d8a0be"][data-format="modal"]{display:none;}.formkit-form[data-uid="65d7d8a0be"][data-format="slide in"]{display:none;}.formkit-form[data-uid="65d7d8a0be"] .formkit-input,.formkit-form[data-uid="65d7d8a0be"] .formkit-select,.formkit-form[data-uid="65d7d8a0be"] .formkit-checkboxes{width:100%;}.formkit-form[data-uid="65d7d8a0be"] .formkit-button,.formkit-form[data-uid="65d7d8a0be"] .formkit-submit{border:0;border-radius:5px;color:#ffffff;cursor:pointer;display:inline-block;text-align:center;font-size:15px;font-weight:500;cursor:pointer;margin-bottom:15px;overflow:hidden;padding:0;position:relative;vertical-align:middle;}.formkit-form[data-uid="65d7d8a0be"] .formkit-button:hover,.formkit-form[data-uid="65d7d8a0be"] .formkit-submit:hover,.formkit-form[data-uid="65d7d8a0be"] .formkit-button:focus,.formkit-form[data-uid="65d7d8a0be"] .formkit-submit:focus{outline:none;}.formkit-form[data-uid="65d7d8a0be"] .formkit-button:hover > span,.formkit-form[data-uid="65d7d8a0be"] .formkit-submit:hover > span,.formkit-form[data-uid="65d7d8a0be"] .formkit-button:focus > span,.formkit-form[data-uid="65d7d8a0be"] .formkit-submit:focus > span{background-color:rgba(0,0,0,0.1);}.formkit-form[data-uid="65d7d8a0be"] .formkit-button > span,.formkit-form[data-uid="65d7d8a0be"] .formkit-submit > span{display:block;-webkit-transition:all 300ms ease-in-out;transition:all 300ms ease-in-out;padding:12px 24px;}.formkit-form[data-uid="65d7d8a0be"] .formkit-input{background:#ffffff;font-size:15px;padding:12px;border:1px solid #e3e3e3;-webkit-flex:1 0 auto;-ms-flex:1 0 auto;flex:1 0 auto;line-height:1.4;margin:0;-webkit-transition:border-color ease-out 300ms;transition:border-color ease-out 300ms;}.formkit-form[data-uid="65d7d8a0be"] .formkit-input:focus{outline:none;border-color:#1677be;-webkit-transition:border-color ease 300ms;transition:border-color ease 300ms;}.formkit-form[data-uid="65d7d8a0be"] .formkit-input::-webkit-input-placeholder{color:inherit;opacity:0.8;}.formkit-form[data-uid="65d7d8a0be"] .formkit-input::-moz-placeholder{color:inherit;opacity:0.8;}.formkit-form[data-uid="65d7d8a0be"] .formkit-input:-ms-input-placeholder{color:inherit;opacity:0.8;}.formkit-form[data-uid="65d7d8a0be"] .formkit-input::placeholder{color:inherit;opacity:0.8;}.formkit-form[data-uid="65d7d8a0be"] [data-group="dropdown"]{position:relative;display:inline-block;width:100%;}.formkit-form[data-uid="65d7d8a0be"] [data-group="dropdown"]::before{content:"";top:calc(50% - 2.5px);right:10px;position:absolute;pointer-events:none;border-color:#4f4f4f transparent transparent transparent;border-style:solid;border-width:6px 6px 0 6px;height:0;width:0;z-index:999;}.formkit-form[data-uid="65d7d8a0be"] [data-group="dropdown"] select{height:auto;width:100%;cursor:pointer;color:#333333;line-height:1.4;margin-bottom:0;padding:0 6px;-webkit-appearance:none;-moz-appearance:none;appearance:none;font-size:15px;padding:12px;padding-right:25px;border:1px solid #e3e3e3;background:#ffffff;}.formkit-form[data-uid="65d7d8a0be"] [data-group="dropdown"] select:focus{outline:none;}.formkit-form[data-uid="65d7d8a0be"] [data-group="checkboxes"]{text-align:left;margin:0;}.formkit-form[data-uid="65d7d8a0be"] [data-group="checkboxes"] [data-group="checkbox"]{margin-bottom:10px;}.formkit-form[data-uid="65d7d8a0be"] [data-group="checkboxes"] [data-group="checkbox"] *{cursor:pointer;}.formkit-form[data-uid="65d7d8a0be"] [data-group="checkboxes"] [data-group="checkbox"]:last-of-type{margin-bottom:0;}.formkit-form[data-uid="65d7d8a0be"] [data-group="checkboxes"] [data-group="checkbox"] input[type="checkbox"]{display:none;}.formkit-form[data-uid="65d7d8a0be"] [data-group="checkboxes"] [data-group="checkbox"] input[type="checkbox"] + label::after{content:none;}.formkit-form[data-uid="65d7d8a0be"] [data-group="checkboxes"] [data-group="checkbox"] input[type="checkbox"]:checked + label::after{border-color:#ffffff;content:"";}.formkit-form[data-uid="65d7d8a0be"] [data-group="checkboxes"] [data-group="checkbox"] input[type="checkbox"]:checked + label::before{background:#10bf7a;border-color:#10bf7a;}.formkit-form[data-uid="65d7d8a0be"] [data-group="checkboxes"] [data-group="checkbox"] label{position:relative;display:inline-block;padding-left:28px;}.formkit-form[data-uid="65d7d8a0be"] [data-group="checkboxes"] [data-group="checkbox"] label::before,.formkit-form[data-uid="65d7d8a0be"] [data-group="checkboxes"] [data-group="checkbox"] label::after{position:absolute;content:"";display:inline-block;}.formkit-form[data-uid="65d7d8a0be"] [data-group="checkboxes"] [data-group="checkbox"] label::before{height:16px;width:16px;border:1px solid #e3e3e3;background:#ffffff;left:0px;top:3px;}.formkit-form[data-uid="65d7d8a0be"] [data-group="checkboxes"] [data-group="checkbox"] label::after{height:4px;width:8px;border-left:2px solid #4d4d4d;border-bottom:2px solid #4d4d4d;-webkit-transform:rotate(-45deg);-ms-transform:rotate(-45deg);transform:rotate(-45deg);left:4px;top:8px;}.formkit-form[data-uid="65d7d8a0be"] .formkit-alert{background:#f9fafb;border:1px solid #e3e3e3;border-radius:5px;-webkit-flex:1 0 auto;-ms-flex:1 0 auto;flex:1 0 auto;list-style:none;margin:25px auto;padding:12px;text-align:center;width:100%;}.formkit-form[data-uid="65d7d8a0be"] .formkit-alert:empty{display:none;}.formkit-form[data-uid="65d7d8a0be"] .formkit-alert-success{background:#d3fbeb;border-color:#10bf7a;color:#0c905c;}.formkit-form[data-uid="65d7d8a0be"] .formkit-alert-error{background:#fde8e2;border-color:#f2643b;color:#ea4110;}.formkit-form[data-uid="65d7d8a0be"] .formkit-spinner{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;height:0px;width:0px;margin:0 auto;position:absolute;top:0;left:0;right:0;width:0px;overflow:hidden;text-align:center;-webkit-transition:all 300ms ease-in-out;transition:all 300ms ease-in-out;}.formkit-form[data-uid="65d7d8a0be"] .formkit-spinner > div{margin:auto;width:12px;height:12px;background-color:#fff;opacity:0.3;border-radius:100%;display:inline-block;-webkit-animation:formkit-bouncedelay-formkit-form-data-uid-65d7d8a0be- 1.4s infinite ease-in-out both;animation:formkit-bouncedelay-formkit-form-data-uid-65d7d8a0be- 1.4s infinite ease-in-out both;}.formkit-form[data-uid="65d7d8a0be"] .formkit-spinner > div:nth-child(1){-webkit-animation-delay:-0.32s;animation-delay:-0.32s;}.formkit-form[data-uid="65d7d8a0be"] .formkit-spinner > div:nth-child(2){-webkit-animation-delay:-0.16s;animation-delay:-0.16s;}.formkit-form[data-uid="65d7d8a0be"] .formkit-submit[data-active] .formkit-spinner{opacity:1;height:100%;width:50px;}.formkit-form[data-uid="65d7d8a0be"] .formkit-submit[data-active] .formkit-spinner ~ span{opacity:0;}.formkit-form[data-uid="65d7d8a0be"] .formkit-powered-by[data-active="false"]{opacity:0.35;}@-webkit-keyframes formkit-bouncedelay-formkit-form-data-uid-65d7d8a0be-{0%,80%,100%{-webkit-transform:scale(0);-ms-transform:scale(0);transform:scale(0);}40%{-webkit-transform:scale(1);-ms-transform:scale(1);transform:scale(1);}}@keyframes formkit-bouncedelay-formkit-form-data-uid-65d7d8a0be-{0%,80%,100%{-webkit-transform:scale(0);-ms-transform:scale(0);transform:scale(0);}40%{-webkit-transform:scale(1);-ms-transform:scale(1);transform:scale(1);}}.formkit-form[data-uid="65d7d8a0be"] blockquote{padding:10px 20px;margin:0 0 20px;border-left:5px solid #e1e1e1;} .formkit-form[data-uid="65d7d8a0be"]{border:1px solid #e3e3e3;max-width:700px;position:relative;overflow:hidden;}.formkit-form[data-uid="65d7d8a0be"] .formkit-background{width:100%;height:100%;position:absolute;top:0;left:0;background-size:cover;background-position:center;opacity:0.3;z-index:1;}.formkit-form[data-uid="65d7d8a0be"] [data-style="minimal"]{padding:20px;width:100%;z-index:2;position:relative;}.formkit-form[data-uid="65d7d8a0be"] .formkit-header{margin:0 0 27px 0;text-align:center;}.formkit-form[data-uid="65d7d8a0be"] .formkit-subheader{margin:18px 0;text-align:center;}.formkit-form[data-uid="65d7d8a0be"] .formkit-guarantee{font-size:13px;margin:10px 0 15px 0;text-align:center;}.formkit-form[data-uid="65d7d8a0be"] .formkit-guarantee > p{margin:0;}.formkit-form[data-uid="65d7d8a0be"] .formkit-powered-by{color:#7d7d7d;display:block;font-size:12px;margin:10px 0 0 0;text-align:center;}.formkit-form[data-uid="65d7d8a0be"] .formkit-fields{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-wrap:wrap;-ms-flex-wrap:wrap;flex-wrap:wrap;margin:25px auto 0 auto;}.formkit-form[data-uid="65d7d8a0be"] .formkit-field{min-width:220px;}.formkit-form[data-uid="65d7d8a0be"] .formkit-field,.formkit-form[data-uid="65d7d8a0be"] .formkit-submit{margin:0 0 15px 0;-webkit-flex:1 0 100%;-ms-flex:1 0 100%;flex:1 0 100%;}.formkit-form[data-uid="65d7d8a0be"][min-width~="600"] [data-style="minimal"]{padding:40px;}.formkit-form[data-uid="65d7d8a0be"][min-width~="600"] .formkit-fields[data-stacked="false"]{margin-left:-5px;margin-right:-5px;}.formkit-form[data-uid="65d7d8a0be"][min-width~="600"] .formkit-fields[data-stacked="false"] .formkit-field,.formkit-form[data-uid="65d7d8a0be"][min-width~="600"] .formkit-fields[data-stacked="false"] .formkit-submit{margin:0 5px 15px 5px;}.formkit-form[data-uid="65d7d8a0be"][min-width~="600"] .formkit-fields[data-stacked="false"] .formkit-field{-webkit-flex:100 1 auto;-ms-flex:100 1 auto;flex:100 1 auto;}.formkit-form[data-uid="65d7d8a0be"][min-width~="600"] .formkit-fields[data-stacked="false"] .formkit-submit{-webkit-flex:1 1 auto;-ms-flex:1 1 auto;flex:1 1 auto;} .formkit-form[data-uid="65d7d8a0be"] h1{display:none;}</style></form>
+		</div>
+	</section>
 
-{% if site.display-next-prev-post and page.previous.url or site.display-next-prev-post and page.next.url %}
-<div class="pagination clearfix">
-  <div class="left">
-    {% if page.next.url %}
-      <a href="{{ page.next.url | prepend: site.baseurl }}">‹ {{ site.var_next_post }}</a>
-    {% else %}
-      <span class="disabled">‹ {{ site.var_next_post }}</span>
-    {% endif %}
-  </div>
-  <div class="right">
-    {% if page.previous.url %}
-      <a href="{{ page.previous.url | prepend: site.baseurl }}">{{ site.var_previous_post }} ›</a>
-    {% else %}
-      <span class="disabled">{{ site.var_previous_post }} ›</span>
-    {% endif %}
-  </div>
+<div class="page-navigation code">
+	{% if page.next.url %}
+    <a class="next" href="{{ page.next.url | prepend: site.baseurl | prepend: site.url }}" title="NEXT: {{page.next.title}}">&lt;&lt;</a>
+		<span> &middot; </span>
+  {% endif %}
+		<a class="hover-link" home" href="{{ "/" | prepend: site.baseurl | prepend: site.url }}" title="Back to Index">Index</a>
+  {% if page.previous.url %}
+		<span> &middot; </span>
+    <a class="prev" href="{{ page.previous.url | prepend: site.baseurl | prepend: site.url }}" title="PREV: {{page.previous.title}}">&gt;&gt;</a>
+  {% endif %}
+  <a class="hover-link" href="https://twitter.com/TheTeaGuns">Twitter</a>
 </div>
-{% endif %}
-
-{% if site.disqus-shortname %}
-<div id="disqus_thread"></div>
-<script type="text/javascript">
-    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
-    var disqus_shortname = '{{ site.disqus-shortname }}'; // Required - Replace '<example>' with your forum shortname
-
-    /* * * DON'T EDIT BELOW THIS LINE * * */
-    (function() {
-        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-    })();
-</script>
-<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-{% endif %}

@@ -1,0 +1,143 @@
+// Text
+// Text alignment utilities
+.text-left {
+  text-align: left;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-justify {
+  text-align: justify;
+}
+
+// Text transform utilities
+.text-lowercase {
+  text-transform: lowercase;
+}
+
+.text-uppercase {
+  text-transform: uppercase;
+}
+
+.text-capitalize {
+  text-transform: capitalize;
+}
+
+.text-underline {
+  text-decoration: underline;
+}
+
+.text-underline-orange {
+  background-image: linear-gradient(
+    transparent 60%,
+    $highlight-color 75%,
+    $highlight-color 85%,
+    transparent 85%,
+    transparent 100%
+);
+  background-position: bottom 30px;
+}
+
+// Text style utilities
+.text-normal {
+  font-weight: 400;
+}
+
+.text-bold {
+  font-weight: 700;
+}
+
+.text-semibold {
+  font-weight: 600;
+}
+
+.text-italic {
+  font-style: italic;
+}
+
+.text-large {
+  font-size: 1.2em;
+}
+
+.text-small {
+  font-size: 0.8em;
+}
+
+.text-strikethrough {
+  text-decoration: line-through;
+}
+
+// Text spacing utiliies
+
+.text-spacing-md {
+  letter-spacing: 0.04em;
+}
+
+// Text overflow utilities
+.text-ellipsis {
+  @include text-ellipsis();
+}
+
+.text-clip {
+  overflow: hidden;
+  text-overflow: clip;
+  white-space: nowrap;
+}
+
+.text-break {
+  hyphens: auto;
+  word-break: break-word;
+  word-wrap: break-word;
+}
+
+.light-link {
+  color: $gray-color-light;
+  &:hover {
+    color: $highlight-color;
+  }
+}
+
+.text-red {
+  color: $highlight-color;
+}
+
+.text-no-my {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.link-nu {
+  color: $highlight-color;
+  border-bottom: none;
+  &:hover {
+    border-bottom: none;
+  }
+}
+
+.p-lg {
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 1.25em;
+  margin-top: 1.25em;
+  opacity: 1;
+}
+
+.arrow-hover {
+  -webkit-transition: -webkit-transform 0.3s ease-in;
+  transition: -webkit-transform 0.3s ease-in;
+  transition: transform 0.3s ease-in;
+  transition: transform 0.3s ease-in, -webkit-transform 0.3s ease-in;
+}
+
+a:hover .arrow-hover {
+  -webkit-transform: translateX(10px);
+          transform: translateX(10px);
+}
+
+@include hint-color-variant(".hint", $base-600);

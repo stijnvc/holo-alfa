@@ -1,0 +1,138 @@
+// Cards
+.go-corner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  width: 32px;
+  height: 32px;
+  top: 0;
+  right: 0;
+  background-color: $highlight-color;
+  border-radius: 0 4px 0 32px;
+}
+
+.go-arrow {
+  margin-top: -4px;
+  margin-right: -4px;
+  color: white;
+  p {
+    color: $white;
+    font-size: 0.8em;
+  }
+}
+
+.card-link {
+  color: $dark-color;
+  font-weight: 400;
+  &:hover {
+    color: $dark-color;
+  }
+}
+
+.card {
+  border: 1px solid $border-color;
+  background: $white;
+  border-radius: $border-radius-lg;
+  display: flex;
+  flex-direction: column;
+  box-shadow: $light-shadow;
+  margin: 10px 0;
+  &.card-hover {
+    display: block;
+    top: 0px;
+    position: relative;
+    text-decoration: none;
+    z-index: 0;
+    overflow: hidden;
+    border: 1px solid $border-color;
+    transition: all 0.2s ease;
+    &:hover {
+      cursor: pointer;
+      box-shadow: $hover-shadow;
+      top: -4px;
+      border: 1px solid $highlight-color;
+      background-color: white;
+    }
+    &.active-notifications {
+      padding-bottom: 18px;
+      &:before {
+        content: "";
+        position: absolute;
+        z-index: -1;
+        top: -16px;
+        right: -16px;
+        background: $highlight-color;
+        height: 32px;
+        width: 32px;
+        border-radius: 32px;
+        transform: scale(2);
+        transform-origin: 50% 50%;
+        transition: transform 0.15s ease-out;
+      }
+    }
+    
+  
+    &:hover:before {
+      transform: scale(2.15);
+    }
+  }
+  .card-header,
+  .card-body,
+  .card-footer {
+    padding: $layout-spacing-lg;
+    padding-bottom: 0;
+
+    &:last-child {
+      padding-bottom: $layout-spacing-lg;
+    }
+  }
+
+  .card-body {
+    flex: 1 1 auto;
+    &.card-body-h-center {
+      display: flex;
+      align-items: center;
+    }
+  }
+
+  .card-image {
+    padding-top: $layout-spacing-lg;
+    position: relative;
+
+    &:first-child {
+      padding-top: 0;
+
+      img {
+        border-top-left-radius: $border-radius;
+        border-top-right-radius: $border-radius;
+      }
+    }
+
+    &:last-child {
+      img {
+        border-bottom-left-radius: $border-radius;
+        border-bottom-right-radius: $border-radius;
+      }
+    }
+    & .img-overlay {
+      &.top-right {
+        position: absolute;
+        top: 3px;
+        right: 6px;
+      }
+    }
+  }
+
+  &-selectable {
+    position: relative;
+    left: 0;
+    transition: all 0.4s ease;
+  }
+
+  &-selected {
+    left: 1rem;
+    background: $primary-color;
+    color: $white;
+  }
+}

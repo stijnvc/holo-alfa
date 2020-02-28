@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css?family=Open_Sans:400,600,800');
+
+// Core variables
+$version: "0.5.8";
+
+// Core features
+$rtl: false !default;
+
+
+// Box shadows
+$light-shadow: 0 4px 60px rgba(55,65,80,0.04);
+$light-shadow-up: 0px -4px 24px 0px rgba(55,65,80,0.1);
+$main-shadow: 0 4px 6px rgba(55,65,80,0.7);
+$hover-shadow: 0px 4px 8px rgba(45, 66, 70, 0.1);
+
+
+// Core colors
+$primary-color: #3498DB !default;
+$primary-color-dark: #2279BF!default;
+$primary-color-light: #9AD0E8 !default;
+$secondary-color: #d6dafb !default;
+$secondary-color-dark: rgb(194, 198, 231) !default;
+$white: #fffffe;
+$highlight-color: #ff6c77;
+
+// Base colors
+$base-200: #F7F9FC !default;
+$base-300: #F5F6FF !default;
+$base-400: #E4E9F2 !default;
+$base-500: #C5CEE0 !default;
+$base-600: #8F9BB3 !default;
+$base-700: #5E6A86 !default;
+$base-800: #2E3A59 !default;
+$base-900: #192038 !default;
+$base-1000: #151A30 !default;
+$base-1100: #101426 !default;
+
+// Gray colors
+$dark-color: #000 !default;
+$gray-color: #d6d6ea !default;
+$gray-color-light: #F5F6FF !default;
+$gray-color-dark: #5E6A86 !default;
+
+$border-color: $gray-color-light !default;
+$border-color-dark: darken($border-color, 10%) !default;
+$border-color-light: lighten($border-color, 8%) !default;
+$bg-color: lighten($gray-color, 35%) !default;
+$bg-color-dark: darken($bg-color, 3%) !default;
+
+// Control colors
+$success: #31BF8F!default;
+$success-light: lighten($success, 40%);
+$warning: #FFCC00 !default;
+$error: #ff6c77 !default;
+$error-light: lighten($error, 12%);
+
+
+// Other colors
+$code-color: #d73e48 !default;
+$highgray-color-light: #ffe9b3 !default;
+$body-bg: $gray-color-light !default;
+$body-font-color: lighten($dark-color, 5%) !default;
+$link-color: $primary-color !default;
+$link-color-dark: darken($link-color, 10%) !default;
+$link-color-light: lighten($link-color, 10%) !default;
+
+// Fonts
+// Credit: https://www.smashingmagazine.com/2015/11/using-system-ui-fonts-practical-guide/
+$base-font-family: "Open Sans", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto !default;
+$serif-font-family: Georgia, Cambria, "Times New Roman", Times, serif;
+$mono-font-family: "SF Mono", "Segoe UI Mono", "Roboto Mono", Menlo, Courier, monospace !default;
+$fallback-font-family: "Helvetica Neue", sans-serif !default;
+$cjk-zh-hans-font-family: $base-font-family, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", $fallback-font-family !default;
+$cjk-zh-hant-font-family: $base-font-family, "PingFang TC", "Hiragino Sans CNS", "Microsoft JhengHei", $fallback-font-family !default;
+$cjk-jp-font-family: $base-font-family, "Hiragino Sans", "Hiragino Kaku Gothic Pro", "Yu Gothic", YuGothic, Meiryo, $fallback-font-family !default;
+$cjk-ko-font-family: $base-font-family, "Malgun Gothic", $fallback-font-family !default;
+$body-font-family: $base-font-family !default;
+$header-font-family: "Open Sans", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto !default;
+
+// Unit sizes
+$unit-o: .05rem !default;
+$unit-h: .1rem !default;
+$unit-1: .2rem !default;
+$unit-2: .4rem !default;
+$unit-3: .6rem !default;
+$unit-4: .8rem !default;
+$unit-5: 1rem !default;
+$unit-6: 1.2rem !default;
+$unit-7: 1.4rem !default;
+$unit-8: 1.6rem !default;
+$unit-9: 1.8rem !default;
+$unit-10: 2rem !default;
+$unit-12: 2.4rem !default;
+$unit-16: 3.2rem !default;
+$unit-32: 6.4rem !default;
+$unit-64: 12.8rem !default;
+
+// Font sizes
+$html-font-size: 20px !default;
+$html-line-height: 1.5 !default;
+$font-size: .8rem !default;
+$font-size-sm: .7rem !default;
+$font-size-lg: .9rem !default;
+$line-height: 1.2rem !default;
+
+// Sizes
+$layout-spacing: $unit-2 !default;
+$layout-spacing-sm: $unit-1 !default;
+$layout-spacing-lg: $unit-4 !default;
+$border-radius: $unit-1 !default;
+$border-radius-lg: 8px;
+$border-width: $unit-o !default;
+$border-width-lg: $unit-h !default;
+$control-size: $unit-9 !default;
+$control-size-sm: $unit-7 !default;
+$control-size-lg: $unit-10 !default;
+$control-size-xl: $unit-12 !default;
+$control-padding-x: $unit-2 !default;
+$control-padding-x-sm: $unit-2 * .75 !default;
+$control-padding-x-lg: $unit-2 * 4 !default;
+$control-padding-y: ($control-size - $line-height) / 2 - $border-width !default;
+$control-padding-y-sm: ($control-size-sm - $line-height) / 2 - $border-width !default;
+$control-padding-y-lg: ($control-size-lg - $line-height) / 2 - $border-width !default;
+$control-icon-size: .8rem !default;
+
+$control-width-xs: 180px !default;
+$control-width-sm: 320px !default;
+$control-width-md: 640px !default;
+$control-width-lg: 960px !default;
+$control-width-xl: 1280px !default;
+
+// Responsive breakpoints
+$size-xs: 480px !default;
+$size-sm: 600px !default;
+$size-md: 840px !default;
+$size-lg: 960px !default;
+$size-xl: 1080px !default;
+$size-xxl: 1200px !default;
+$size-2x: 1440px !default;
+
+$responsive-breakpoint: $size-xs !default;
+
+// Z-index
+$zindex-0: 1 !default;
+$zindex-1: 100 !default;
+$zindex-2: 200 !default;
+$zindex-3: 300 !default;
+$zindex-4: 400 !default;

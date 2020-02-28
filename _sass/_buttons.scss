@@ -1,0 +1,302 @@
+// Buttons
+.btn {
+  appearance: none;
+  background: $white;
+  border: $border-width solid $white;
+  border-radius: $border-radius;
+  color: $gray-color-dark;
+  cursor: pointer;
+  display: inline-block;
+  font-size: $font-size;
+  font-weight: 600;
+  outline: none;
+  padding: 6px 10px;
+  text-align: center;
+  text-decoration: none;
+  transition: all ease 0.3s;
+  user-select: none;
+  vertical-align: middle;
+  white-space: nowrap;
+  &:focus {
+    @include control-shadow();
+  }
+  &:focus,
+  &:hover {
+    background: $secondary-color;
+    border-color: $secondary-color;
+    text-decoration: none;
+    box-shadow: $light-shadow;
+    color: $primary-color-dark;
+  }
+  &:active,
+  &.active {
+    background: $secondary-color-dark;
+    border-color: $secondary-color-dark;
+    color: $white;
+    text-decoration: none;
+    &.loading {
+      &::after {
+        border-bottom-color: $gray-color-light;
+        border-left-color: $gray-color-light;
+      }
+    }
+  }
+  &[disabled],
+  &:disabled,
+  &.disabled {
+    cursor: default;
+    opacity: .5;
+    pointer-events: none;
+  }
+
+  &.btn-secondary {
+    border: 1px solid $secondary-color;
+    color: $primary-color;
+    background-color: $secondary-color;
+    &:hover {
+      background-color: $secondary-color-dark;
+    }
+  }
+
+  // Button Primary
+  &.btn-primary {
+    background: $primary-color;
+    border-color: $primary-color;
+    color: $gray-color-light;
+    &:focus,
+    &:hover {
+      background: darken($primary-color-dark, 2%);
+      border-color: darken($primary-color-dark, 5%);
+      color: $gray-color-light;
+    }
+    &:active,
+    &.active {
+      background: darken($primary-color-dark, 4%);
+      border-color: darken($primary-color-dark, 7%);
+      color: $gray-color-light;
+    }
+    &.loading {
+      &::after {
+        border-bottom-color: $gray-color-light;
+        border-left-color: $gray-color-light;
+      }
+    }
+  }
+  // Button Success
+  &.btn-outline-success {
+    background: transparent;
+    border-color: $success;
+    color: $success;
+    &:hover {
+      background: $success;
+      color: $white;
+    }
+  }
+
+  // Button Deny
+  &.btn-outline-error {
+    background: transparent;
+    border-color: $error;
+    color: $error;
+    &:hover {
+      background: $error;
+      color: $white;
+    }
+  }
+
+  &.btn-outline {
+    background: transparent;
+    border: 1px solid $white;
+    color: $white;
+    &:hover {
+      background: rgba(255,255,255,0.3);      
+    }
+    &.btn-dark {
+      border: 1px solid $dark-color;
+      color: $dark-color;
+      &:hover {
+        background: $gray-color;
+      }
+    }
+    &.btn-primary {
+      border: 1px solid $primary-color;
+      color: $primary-color;
+      &:hover {
+        background: $secondary-color;
+      }
+    }
+  }
+
+  // Button Colors
+  &.btn-success {
+    @include button-variant($success);
+  }
+
+
+  &.btn-error {
+    @include button-variant($highlight-color);
+  }
+  &.btn-red {
+    @include button-variant($highlight-color)
+  }
+
+  // Button Link
+  &.btn-link {
+    background: transparent;
+    border-color: transparent;
+    color: $white;
+    border-radius: 0;
+    margin: 0;
+    opacity: 1;
+    &:focus,
+    &:hover,
+    &:active,
+    &.active {
+      color: $secondary-color;
+    }
+    &.btn-link-dark {
+      color: $dark-color;
+      &:focus,
+      &:active,
+      &:hover,
+      &.active {
+        color: $link-color-dark;
+      }
+    }
+    &.btn-link-gray {
+      background: transparent;
+      border-color: transparent;
+      color: $gray-color;
+      &:focus,
+      &:active,
+      &:hover,
+      &.active {
+        color: $link-color-dark;
+      }
+    }
+  }
+
+  // Button Sizes
+  &.btn-sm {
+    font-size: $font-size-sm;
+    height: $control-size-sm;
+    padding: $control-padding-y-sm $control-padding-x-sm;
+  }
+
+  &.btn-lg {
+    font-size: $font-size;
+    padding: 11px 16px;
+  }
+
+  // Button Block
+  &.btn-block {
+    display: block;
+    width: 100%;
+  }
+
+  // Button Action
+  &.btn-action {
+    width: $control-size;
+    padding-left: 0;
+    padding-right: 0;
+
+    &.btn-sm {
+      width: $control-size-sm;
+    }
+
+    &.btn-lg {
+      width: $control-size-lg;
+    }
+  }
+
+  // Button Clear
+  &.btn-clear {
+    background: transparent;
+    border: 0;
+    color: currentColor;
+    height: $unit-5;
+    line-height: $unit-4;
+    margin-left: $unit-1;
+    margin-right: -2px;
+    opacity: 1;
+    padding: $unit-h;
+    text-decoration: none;
+    width: $unit-5;
+
+    &:focus,
+    &:hover {
+      background: rgba($bg-color, .5);
+      opacity: .95;
+    }
+
+    &::before {
+      content: "\2715";
+    }
+  }
+
+  &.btn-inline {
+    padding: 0;
+    vertical-align: baseline;
+    height: auto;
+    line-height: 1;
+  }
+}
+
+// Button groups
+.btn-group {
+  display: inline-flex;
+  flex-wrap: wrap;
+
+  .btn {
+    flex: 1 0 auto;
+    &:first-child:not(:last-child) {
+      border-bottom-right-radius: 0;
+      border-top-right-radius: 0;
+    }
+    &:not(:first-child):not(:last-child) {
+      border-radius: 0;
+      margin-left: -$border-width;
+    }
+    &:last-child:not(:first-child) {
+      border-bottom-left-radius: 0;
+      border-top-left-radius: 0;
+      margin-left: -$border-width;
+    }
+    &:focus,
+    &:hover,
+    &:active,
+    &.active {
+      z-index: $zindex-0;
+    }
+  }
+
+  &.btn-group-block {
+    display: flex;
+
+    .btn {
+      flex: 1 0 0;
+    }
+  }
+}
+
+.btn-group-vertical {
+  .btn {
+    display: block;
+    border: $border-width solid $gray-color;
+    &:first-child:not(:last-child) {
+      border-radius: $border-radius $border-radius 0 0;
+    }
+    &:not(:first-child):not(:last-child) {
+      margin-top: -$border-width;
+      border-radius: 0;
+    }
+    &:last-child:not(:first-child) {
+      margin-top: -$border-width;
+      border-top-left-radius: 0;
+      border-top-right-radius: 0;
+    }
+    &.active {
+      border: $border-width solid $primary-color;
+    }
+  }
+}

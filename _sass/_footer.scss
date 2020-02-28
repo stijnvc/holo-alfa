@@ -1,0 +1,40 @@
+.footer {
+  background: $dark-color;
+  padding: 0 0 100px;
+  .footer-contents {
+    padding-top: 80px;
+    .footer-social {
+      a {
+        display: inline-block;
+        font-size: 1.5em;
+      }
+    }
+  }
+  h5 {
+    color: $dark-color;
+    a {
+      margin: 0;
+    }
+  }
+  .builtby {
+    p, svg {
+      display: inline-block;
+    }
+  }
+  p {
+    color: $gray-color;
+    font-size: 0.8em;
+    margin: 15px 0;
+  }
+  a {
+    color: $secondary-color;
+    &:hover {
+      color: $highlight-color;
+      cursor: pointer;
+    }
+  }
+  ul {
+    list-style-type: none;
+    margin: 0;
+  }
+}
