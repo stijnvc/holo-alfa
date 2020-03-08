@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap');
+
+// Core variables
+$version: "0.5.8";
+
+// Core features
+$rtl: false !default;
+
+
+// Core colors
+$summit: #6515DD !default;
+$summit-dark: #5212B0 !default;
+$summit-pink: #FF56CB !default;
+$summit-pinkdark: #DB3CAA !default;
+
+.rock-salt {
+  font-family: "Rock Salt";
+}
+
+.bg-summit {
+  background-color: $summit;
+}
+
+.text-summit {
+  color: $summit;
+}
+
+.text-summitpink {
+  color: $summit-pink;
+}
+
+.btn-summit {
+  background-color: $summit-pink;
+  padding: 15px 40px;
+  color: $white;
+  &:hover {
+    background-color: $summit-pinkdark;
+    color: $white;
+  }
+}
+
+.offset {  
+  box-shadow: 
+    0 0 0 0 $summit-pink,
+    inset 0 0 0 0 $summit-pinkdark;
+  
+  &:hover,
+  &:focus {
+    box-shadow: 
+      0.3em 0.3em 0 0 $summit-pink,
+      inset 6em 3.5em 0 0 $summit-pinkdark;
+  }
+}
+
+.offset-2 {
+  position: relative;
+  transition: all ease 0.3s;
+  border: 2px solid $base-300;
+  box-shadow:
+    0 0 0 0 $summit-pink;
+
+  &:hover,
+  &:focus {
+    box-shadow:
+      0.3em 0.3em 0 0 $summit-pink;
+    border: 2px solid $summit;
+  }
+}
+
+.speakers {
+  .column:nth-child(3n) {
+    .speaker-image:hover {
+      transform: rotate(-1deg);
+    }
+  }
+  .column:nth-child(5n) {
+    .speaker-image:hover {
+      transform: rotate(4deg);
+    }
+  }
+  .column:nth-child(8n) {
+    .speaker-image:hover {
+      transform: rotate(2deg);
+    }
+  }
+}
+
+.speaker-image {
+  transition: all 0.3s ease;
+  position: relative;
+
+  &:hover {
+    transform: rotate(-3deg);
+  }
+}
+
+.summit-logo {
+  width: 110%;
+  bottom: -100px;
+  right: -20px;
+}
+
+@media (max-width: $size-sm) {
+  .summit-logo {
+    bottom: -80px;
+  }
+}
