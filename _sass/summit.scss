@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sigmar+One&display=swap');
 
 // Core variables
 $version: "0.5.8";
@@ -15,6 +16,10 @@ $summit-pinkdark: #DB3CAA !default;
 
 .rock-salt {
   font-family: "Rock Salt";
+}
+
+.sigmar {
+  font-family: "Sigmar One";
 }
 
 .bg-summit {
@@ -52,30 +57,100 @@ $summit-pinkdark: #DB3CAA !default;
   }
 }
 
+.offset-link {
+  position: relative;
+  overflow: hidden;
+  text-decoration: none;
+  color: $summit;
+  padding: 1px 3px;
+  &::after {
+    content: "";
+    background: rgba($summit, 0.15);
+    position: absolute;
+    left: 12px;
+    bottom: -6px;
+    width: calc(100% - 8px);
+    height: calc(100% - 8px);
+    z-index: -1;
+    transition: 0.35s cubic-bezier(0.25, 0.1, 0, 2.05);
+  }
+  &:hover {
+    color: $summit-pink;
+  }
+  &:hover:after {
+    background: rgba($summit-pink, 0.25);
+    left: 0;
+    bottom: -2px;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+
 .offset-2 {
   position: relative;
-  transition: all ease 0.3s;
-  border: 2px solid $base-300;
+  transition: 0.35s cubic-bezier(0.25, 0.1, 0, 2.05);
+  border: 2px solid transparent;
   box-shadow:
     0 0 0 0 $summit-pink;
 
   &:hover,
   &:focus {
     box-shadow:
-      0.3em 0.3em 0 0 $summit-pink;
+      0.5em 0.5em 0 0 $summit-pink;
     border: 2px solid $summit;
+  }
+}
+
+.speaker-title {
+  display: inline-block;
+  position: relative;
+  overflow: hidden;
+  text-decoration: none;
+  color: $summit;
+  padding: 5px 15px;
+  margin-bottom: 0;
+  &.s-1::after {
+    content: "";
+    background: rgba($summit, 0.15);
+    position: absolute;
+    right: 0px;
+    bottom: -6px;
+    width: calc(100% - 30px);
+    height: calc(100% - 14px);
+    z-index: -1;
+  }
+  &.s-2::after {
+    content: "";
+    background: rgba($summit, 0.15);
+    position: absolute;
+    left: 0px;
+    top: -3px;
+    width: calc(100% - 30px);
+    height: calc(100% - 14px);
+    z-index: -1;
+  }
+  &.s-3::after {
+    content: "";
+    background: rgba($summit, 0.15);
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    width: calc(100% - 30px);
+    height: calc(100% - 14px);
+    z-index: -1;
   }
 }
 
 .speakers {
   .column:nth-child(3n) {
     .speaker-image:hover {
-      transform: rotate(-1deg);
+      transform: rotate(4deg);
     }
   }
   .column:nth-child(5n) {
     .speaker-image:hover {
-      transform: rotate(4deg);
+      transform: rotate(-1deg);
     }
   }
   .column:nth-child(8n) {
@@ -96,7 +171,7 @@ $summit-pinkdark: #DB3CAA !default;
 
 .summit-logo {
   width: 110%;
-  bottom: -100px;
+  bottom: -150px;
   right: -20px;
 }
 
