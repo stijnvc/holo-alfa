@@ -200,12 +200,20 @@ $summit-pinkdark: #DB3CAA !default;
 
 .summit-logo {
   width: 110%;
-  bottom: -150px;
-  right: -20px;
+  bottom: -160px;
+  right: -40px;
+  transform: rotate(5deg);
+}
+
+.summit-text {
+  width: 100%;
+  margin-bottom: -10px;
 }
 
 @media (max-width: $size-sm) {
   .summit-logo {
     bottom: -80px;
+    width: 100%;
+    right: 0;
   }
 }
