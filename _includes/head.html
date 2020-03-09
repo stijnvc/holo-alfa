@@ -8,7 +8,17 @@
 	<title>{{ site.title }}</title>
 {% endif %}
 
-<meta name="description" content="Community Chat is a private network of community leaders who believe the best way to impact the world is through community. Together, we help each other navigate the world of community building by sharing resources, strategies, and best practices. ">
+{% if page.image %}
+  <meta content="/assets/summit/{{ page.image }}" property="og:image">
+{% else %}
+  <meta content="" property="og:image">
+{% endif %}
+
+{% if page.description %}
+  <meta content="{{ page.description }}" property="og:description">
+{% else %}
+  <meta content="Community Chat is a private network of community leaders who believe the best way to impact the world is through community. Together, we help each other navigate the world of community building by sharing resources, strategies, and best practices. " property="og:description">
+{% endif %}
 
 <script src="https://kit.fontawesome.com/09d99c41d9.js" crossorigin="anonymous"></script>
 
