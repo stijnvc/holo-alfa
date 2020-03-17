@@ -1,5 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Sigmar+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500;900&display=swap');
 
 // Core variables
 $version: "0.5.8";
@@ -10,20 +10,31 @@ $rtl: false !default;
 
 // Core colors
 $summit: #6515DD !default;
+$summit-light: rgb(203, 178, 241) !default;
 $summit-dark: #5212B0 !default;
 $summit-pink: #FF56CB !default;
 $summit-pinkdark: #DB3CAA !default;
 
 .rock-salt {
-  font-family: "Rock Salt";
+  font-family: "Shadows Into Light";
 }
 
 .sigmar {
-  font-family: "Sigmar One";
+  font-family: "Inter";
+  font-weight: 900;
+}
+
+
+.border-summit {
+  border: 2px solid $summit;
 }
 
 .bg-summit {
   background-color: $summit;
+}
+
+.bg-summit-light {
+  background-color: $summit-light;
 }
 
 .text-summit {
@@ -126,7 +137,7 @@ $summit-pinkdark: #DB3CAA !default;
   &:hover,
   &:focus {
     box-shadow:
-      0.5em 0.5em 0 0 $summit-pink;
+    0.5em 0.5em 0 0 $summit-pink;
     border: 2px solid $summit;
   }
 }
@@ -190,9 +201,8 @@ $summit-pinkdark: #DB3CAA !default;
 }
 
 .speaker-image {
-  transition: all 0.3s ease;
+  transition: all 0.35s cubic-bezier(0.25, 0.1, 0, 2.05);
   position: relative;
-
   &:hover {
     transform: rotate(-3deg);
   }
