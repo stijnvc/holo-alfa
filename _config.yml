@@ -9,12 +9,12 @@ description:
 
   # Description of your site. This will show up on the front page.
   subtitle: Blog do Wesley Ferreira.
-  
+
 author:
   name: Wesley Ferreira # Change this!
 
   # Necessary for contact page
-  email: ovvesley # Change this!
+  email: ovvesley@gmail.com # Change this!
 
   # Optional text (html) to display after author name. Leave empty if you don't
   # want it.
@@ -39,7 +39,8 @@ display-social-icons: true
 # If you want social links to open in a new tab, set this as true
 social-icons-open-newtab: true
 
-footer-text: ovvesley
+footer-text: ovvesley <br/>  Jekyll theme crafted by <a href="http://stijnvc.github.io/holo-alfa/">Stijn</a>
+
 
 # Preferably 64px in height. Leave empty = disable.
 logo-image: # /img/logo.png
