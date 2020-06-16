@@ -149,3 +149,5 @@ defaults:
     values:
       layout: "post"
       excerpt_separator: "<!--more-->"
+
+theme: jekyll-theme-tactile
