@@ -307,7 +307,7 @@ input[type="submit"] {
   cursor: pointer;
 }
 .pagination {
-  margin-top: -30px;
+  margin-top: 30px;
   font-family: "Source Sans Pro", Verdana, sans-serif;
   font-weight: 600;
   padding-bottom: 50px;
@@ -482,3 +482,49 @@ nav a.current {
     margin-bottom: 0;
   }
 }
+
+.article-index {
+  background-color: var(--background);
+  display: block;
+ 
+  min-height: 90px;
+  border: 3px solid var(--primary);
+  padding: 15px;
+  margin-top: 50px;
+  box-shadow: 10px -10px 0 -3px var(--background), 10px -10px var(--green),
+        20px -20px 0 -3px var(--background), 20px -20px var(--yellow), 
+        30px -30px 0 -3px var(--background), 30px -30px var(--orange), 
+        40px -40px 0 -3px var(--background), 40px -40px var(--red); 
+  transition: box-shadow 1s, top 1s, left 1s;
+  position: relative;
+  top: 0;
+  left: 0;
+  cursor: pointer;
+}
+
+.article-index:hover {
+  top: -40px;
+  left: 40px;
+  box-shadow: 0 0 0 -3px var(--background), 0 0 0 0 var(--green),
+      0 0 0 -3px var(--background), 0 0 0 0  var(--yellow),
+      0 0 0 -3px var(--background), 0 0 0 0  var(--orange),
+      0 0 0 -3px  var(--background), 0 0 0 0  var(--red);
+}
+
+
+
+
+
+
+
+
+
+:root {
+  --primary: #555BFF;
+  --secondary: #22D2A0;
+  --background: white;
+  --green: #1FC11B;
+  --yellow: #FFD913;
+  --orange: #FF9C55;
+  --red: #FF5555;
+} 

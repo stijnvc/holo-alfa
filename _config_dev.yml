@@ -1,32 +1,30 @@
 
 # The name of your website.
-name: Holo Alfa
+name: ovvesley
 
 description:
 
   # Description of your site. This will show up in google.
-  meta: Holo Alfa is a minimalist, mobile first Jekyll theme with focus on readability and content.
+  meta: ovvesley
 
   # Description of your site. This will show up on the front page.
-  subtitle: Holo Alfa is a minimalist, mobile first Jekyll theme with focus on readability and content. <a href="https://github.com/stijnvc/holo-alfa">&lt;/&gt; on Github</a>.
+  subtitle: Blog do Wesley Ferreira. Criado para conversar sobre coisas que gosto.
 
 author:
-  name: Dr. Jekyll # Change this!
+  name: Wesley Ferreira # Change this!
 
   # Necessary for contact page
-  email: your@email.com # Change this!
+  email: ovvesley # Change this!
 
   # Optional text (html) to display after author name. Leave empty if you don't
   # want it.
   info:
 
-# The URL of the homepage of your site (without trailing slash). Leave this
-# empty when you run Jekyll locally.
 url: http://localhost:4000
 baseurl: ""
 
 # language attribute in <html> element.
-lang: en
+lang: pt-br
 
 # FROM THIS POINT ON EVERYTHING IS OPTIONAL
 
@@ -38,8 +36,10 @@ lang: en
 # {% include subtitle.html %} to include it anywhere you want.
 show-subtitle: true
 display-social-icons: false
+# If you want social links to open in a new tab, set this as true
+social-icons-open-newtab: true
 
-footer-text: This is the footer.<br><a href="http://stijnvc.github.io/holo-alfa/">Holo Alfa</a> Jekyll theme crafted by <a href="http://stijnvc.github.io/holo-alfa/">Stijn</a>.
+footer-text: ovvesley <br/>  Jekyll theme crafted by <a href="http://stijnvc.github.io/holo-alfa/">Stijn</a>
 
 # Preferably 64px in height. Leave empty = disable.
 logo-image: # /img/logo.png
@@ -89,7 +89,7 @@ disqus-shortname:
 
 # Use a complete url here, including http:// and such. Requiring just usernames
 # has been considered, but this is way more customizable.
-twitter:
+twitter: https://twitter.com/ovvesley
 youtube:
 instagram:
 tumblr:
@@ -98,8 +98,8 @@ google-plus:
 reddit:
 soundcloud:
 medium:
-linkedin:
-github:
+linkedin: https://www.linkedin.com/in/ovvesley/
+github: https://github.com/ovvesley
 behance:
 codepen:
 dribbble:
@@ -115,18 +115,18 @@ paypal:
 
 # Useful for translating into other languages.
 
-var_on_the_web: On the web
-var_read: Read # Text after each post summary on the homepage.
+var_on_the_web: na internet
+var_read: Leia mais # Text after each post summary on the homepage.
 var_newer: Newer
 var_older: Older
-var_next_post: Next post
-var_previous_post: Previous post
-var_less_than_a_minute_read: Less than a minute read
-var_min_read: min read # Text after reading time. Example: 5 min read.
+var_next_post: Próximo publicação
+var_previous_post: Publicação anterior
+var_less_than_a_minute_read: menos de um minutinho para a leitura
+var_min_read: minutinhos para ler  # Text after reading time. Example: 5 min read.
 var_post_by: Post by
 var_guest_post_by: Guest post by
-var_your_email: Your email
-var_your_message: Your message
+var_your_email: ovvesley@gmail.com
+var_your_message: brasiliano
 
 
 ##################
