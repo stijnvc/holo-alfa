@@ -511,7 +511,11 @@ nav a.current {
       0 0 0 -3px  var(--background), 0 0 0 0  var(--red);
 }
 
-
+.subtitle p b, .website-title{
+  width: auto;
+  background-color: var(--destaque);
+  width: fit-content;
+}
 
 
 
@@ -527,4 +531,5 @@ nav a.current {
   --yellow: #FFD913;
   --orange: #FF9C55;
   --red: #FF5555;
+  --destaque: rgba(0, 240, 255, 0.4)
 } 

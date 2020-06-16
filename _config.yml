@@ -8,8 +8,8 @@ description:
   meta: ovvesley
 
   # Description of your site. This will show up on the front page.
-  subtitle: Blog do Wesley Ferreira. Criado para conversar sobre coisas que gosto.
-
+  subtitle: Blog do Wesley Ferreira.
+  
 author:
   name: Wesley Ferreira # Change this!
 
@@ -35,7 +35,7 @@ lang: pt-br
 # If you want to show the subtitle anywhere else than the front page, use
 # {% include subtitle.html %} to include it anywhere you want.
 show-subtitle: true
-display-social-icons: false
+display-social-icons: true
 # If you want social links to open in a new tab, set this as true
 social-icons-open-newtab: true
 
@@ -117,8 +117,8 @@ paypal:
 
 var_on_the_web: na internet
 var_read: Leia mais # Text after each post summary on the homepage.
-var_newer: Newer
-var_older: Older
+var_newer: Postagens mais recentes
+var_older: Postagens mais antigas
 var_next_post: Próximo publicação
 var_previous_post: Publicação anterior
 var_less_than_a_minute_read: menos de um minutinho para a leitura
