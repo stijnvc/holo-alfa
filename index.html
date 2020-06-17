@@ -14,7 +14,7 @@ home: true
   {% assign read-time = minutes | append: "&nbsp;" | append: site.var_min_read %}
 {% endif %}
 
-  <article class="article-index">
+  <article class="article-index" onclick='window.location="{{ post.url | prepend: site.baseurl }}"'>
     <span class="meta ">
       {% if site.display-author-front-page %}
         {% if post.author.name %}

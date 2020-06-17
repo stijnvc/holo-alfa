@@ -395,6 +395,13 @@ nav a.current {
   .website-title {
     font-size: 32px;
   }
+
+  .article-index {
+    padding: 15px;    
+    border: 3px solid var(--primary);
+  
+
+  
 }
 @media all and (min-width: 500px) {
   .wrap {
@@ -453,6 +460,9 @@ nav a.current {
   hr {
     margin: 90px auto;
   }
+
+  
+
 }
 @media all and (min-width: {{ site.nav-breaking-point }}) {
   .website-title {
@@ -481,7 +491,8 @@ nav a.current {
     margin-top: 120px;
     margin-bottom: 0;
   }
-}
+
+
 
 .article-index {
   background-color: var(--background);
@@ -511,15 +522,22 @@ nav a.current {
       0 0 0 -3px  var(--background), 0 0 0 0  var(--red);
 }
 
+
+
+
+}
+
+article h1:hover {
+  background-color: var(--yellow);
+  transform: scale(1.03);
+}
+
+
 .subtitle p b, .website-title{
   width: auto;
   background-color: var(--destaque);
   width: fit-content;
 }
-
-
-
-
 
 
 
