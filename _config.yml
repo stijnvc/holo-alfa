@@ -1,154 +1,83 @@
-
-# The name of your website.
+---
+title: Ovvesley.Github.Io
+timezone: UTC
+collections:
+  posts:
+    title: Posts
+    output: true
+  uploads:
+    title: Uploads
+    output: true
+defaults:
+- scope:
+    path: ''
+    type: posts
+  values:
+    layout: post
+    excerpt_separator: "<!--more-->"
 name: ovvesley
-
 description:
-
-  # Description of your site. This will show up in google.
   meta: ovvesley
-
-  # Description of your site. This will show up on the front page.
   subtitle: Blog do Wesley Ferreira.
-
 author:
-  name: Wesley Ferreira # Change this!
-
-  # Necessary for contact page
-  email: ovvesley@gmail.com # Change this!
-
-  # Optional text (html) to display after author name. Leave empty if you don't
-  # want it.
-  info:
-
+  name: Wesley Ferreira
+  email: ovvesley@gmail.com
+  info: 
 url: 
 baseurl: "/"
-
-# language attribute in <html> element.
 lang: pt-br
-
-# FROM THIS POINT ON EVERYTHING IS OPTIONAL
-
-##############
-# APPEREANCE #
-##############
-
-# If you want to show the subtitle anywhere else than the front page, use
-# {% include subtitle.html %} to include it anywhere you want.
 show-subtitle: true
 display-social-icons: true
-# If you want social links to open in a new tab, set this as true
 social-icons-open-newtab: true
-
 footer-text: ovvesley <br/>  Jekyll theme crafted by <a href="http://stijnvc.github.io/holo-alfa/">Stijn</a>
-
-
-# Preferably 64px in height. Leave empty = disable.
-logo-image: # /img/logo.png
-
-# Toolbar color for Chrome on Android.
+logo-image: 
 theme-color-attr: "#00f0ff"
-
-# Color of Microsoft live Tile.
 ms-tile-color: "#00f0ff"
-
-# Color used throughout the theme. Format: R, G, B.
-theme-color: 0, 240, 255 # Original: 0, 240, 255
-
-# Text color used throughout the theme. Format: R, G, B.
-text-color: 0, 0, 0 # Original: 0, 0, 0
-
-# Background color used throughout the theme. Format: R, G, B.
-# Note: if you change the background color AND you use cover images, you should
-#       also change the CSS gradient in "_includes\gradient.css" to match the
-#       background color. Edit and copy it from here:
-#       http://www.colorzilla.com/gradient-editor/#ffffff+0,ffffff+100&0+0,1+100
-background-color: 255, 255, 255 # Original: 255, 255, 255
-
+theme-color: 0, 240, 255
+text-color: 0, 0, 0
+background-color: 255, 255, 255
 display-author-post-page: true
 display-author-front-page: true
-
-# http://alanwsmith.com/jekyll-liquid-date-formatting-examples
 date_format: "%b %-d, %Y"
-
-# Minimal screen-width after which the navigation will change position from
-# vertical to horizontal.
 nav-breaking-point: 520px
-
-# Number of posts on each page.
 paginate: 3
-
-# Display links for the previous and next post on post pages.
 display-next-prev-post: false
-
-# Leave empty if you don't want comments on post pages.
-disqus-shortname:
-
-
-################
-# SOCIAL ICONS #
-################
-
-# Use a complete url here, including http:// and such. Requiring just usernames
-# has been considered, but this is way more customizable.
+disqus-shortname: 
 twitter: https://twitter.com/ovvesley
-youtube:
-instagram:
-tumblr:
-facebook:
-google-plus:
-reddit:
-soundcloud:
-medium:
+youtube: 
+instagram: 
+tumblr: 
+facebook: 
+google-plus: 
+reddit: 
+soundcloud: 
+medium: 
 linkedin: https://www.linkedin.com/in/ovvesley/
 github: https://github.com/ovvesley
-behance:
-codepen:
-dribbble:
-trello:
-stack-overflow:
-bitcoin:
-paypal:
-
-
-#####################
-# CUSTOMIZABLE TEXT #
-#####################
-
-# Useful for translating into other languages.
-
+behance: 
+codepen: 
+dribbble: 
+trello: 
+stack-overflow: 
+bitcoin: 
+paypal: 
 var_on_the_web: na internet
-var_read: Leia mais # Text after each post summary on the homepage.
+var_read: Leia mais
 var_newer: Postagens mais recentes
 var_older: Postagens mais antigas
 var_next_post: Próximo publicação
 var_previous_post: Publicação anterior
 var_less_than_a_minute_read: menos de um minutinho para a leitura
-var_min_read: minutinhos para ler  # Text after reading time. Example: 5 min read.
+var_min_read: minutinhos para ler
 var_post_by: Post by
 var_guest_post_by: Guest post by
 var_your_email: ovvesley@gmail.com
 var_your_message: brasiliano
-
-
-##################
-# BUILD SETTINGS #
-##################
-
-# You don't have to change these.
-
-exclude: [vendor]
+exclude:
+- vendor
 highlighter: rouge
 kramdown:
   input: GFM
 paginate_path: "/page-:num/"
 permalink: pretty
-defaults:
-  -
-    scope:
-      path: ""
-      type: "posts"
-    values:
-      layout: "post"
-      excerpt_separator: "<!--more-->"
-
 theme: jekyll-theme-tactile

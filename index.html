@@ -3,8 +3,6 @@ layout: default
 home: true
 ---
 
-
-
 {% for post in paginator.posts %}
 
 {% assign minutes = post.content | number_of_words | divided_by: 180 %}
