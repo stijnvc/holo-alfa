@@ -29,7 +29,9 @@ lang: pt-br
 show-subtitle: true
 display-social-icons: true
 social-icons-open-newtab: true
-footer-text: feito com carinho ❤ no Rio de Janeiro. <br/> <i> O tema utilizado nesse blog é um fork customizado de um tema Jekyll desenvolvido por <a href="http://stijnvc.github.io/holo-alfa/">Stijn</a> <i>
+footer-text: feito com carinho ❤ no Rio de Janeiro. <br/> <i> O tema utilizado nesse
+  blog é um fork customizado de um tema Jekyll desenvolvido por <a href="http://stijnvc.github.io/holo-alfa/">Stijn</a>
+  <i>
 logo-image: 
 theme-color-attr: "#00f0ff"
 ms-tile-color: "#00f0ff"
